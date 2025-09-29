@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Malaysia Airports Distribution",
+    "subtitle": "Location and type of airports across Malaysia",
+    "fontSize": 16,
+    "anchor": "start"
+  },
+  "width": 950,
+  "height": 400,
+  "projection": {
+    "type": "mercator",
+    "center": [109.5, 4],
+    "scale": 2650
+  },
+  "layer": [
+    {
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e6f3ff"
+      }
+    },
+    {
+      "data": {
+        "graticule": {"step": [1, 1]}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "lightgray",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia_map.json",
+        "format": {
+          "type": "topojson",
+          "feature": "my"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f0f8ff",
+        "stroke": "white",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/my-airports.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.8,
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude_deg",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude_deg",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["small_airport", "medium_airport", "large_airport"],
+            "range": [50, 150, 300]
+          },
+          "legend": {
+            "title": "Airport Size",
+            "values": ["small_airport", "medium_airport", "large_airport"],
+            "labelExpr": "datum.label == 'small_airport' ? 'Small Airport' : datum.label == 'medium_airport' ? 'Medium Airport' : 'Large Airport'"
+          }
+        },
+        "color": {
+          "field": "type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["small_airport", "medium_airport", "large_airport"],
+            "range": ["#fdcc8a", "#fc8d59", "#d7301f"]
+          },
+          "legend": {
+            "title": "Airport Type",
+            "values": ["small_airport", "medium_airport", "large_airport"],
+            "labelExpr": "datum.label == 'small_airport' ? 'Small Airport' : datum.label == 'medium_airport' ? 'Medium Airport' : 'Large Airport'"
+          }
+        },
+        "tooltip": [
+          {"field": "name", "type": "nominal", "title": "Airport Name"},
+          {"field": "type", "type": "nominal", "title": "Airport Type"},
+          {"field": "municipality", "type": "nominal", "title": "City"},
+          {"field": "region_name", "type": "nominal", "title": "State"},
+          {"field": "iata_code", "type": "nominal", "title": "IATA Code"},
+          {"field": "icao_code", "type": "nominal", "title": "ICAO Code"},
+          {"field": "elevation_ft", "type": "quantitative", "title": "Elevation (ft)", "format": ","},
+          {"field": "scheduled_service", "type": "nominal", "title": "Scheduled Service"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Distribution of Airports in Malaysia",
+        "subtitle": "Locations and Information of Airports across Malaysia",
+        "fontSize": 20,
+        "anchor": "start"
+    },
+    "width": 950,
+    "height": 400,
+    "projection": {
+        "type": "mercator",
+        "center": [109.5, 4],
+        "scale": 2650
+    },
+    "layer": [
+        {
+            "data": {
+                "sphere": true
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#e6f3ff"
+            }
+        },
+        {
+            "data": {
+                "graticule": {"step": [1, 1]}
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": null,
+                "stroke": "lightgray",
+                "strokeWidth": 0.5
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia_map.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "my"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "lightgray",
+                "stroke": "white",
+                "strokeWidth": 1
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/my-airports.csv",
+                "format": {"type": "csv"}
+            },
+            "transform": [
+                {
+                    "filter": "datum.type != 'closed' && datum.type != 'heliport'"
+                }
+            ],
+            "mark": {
+                "type": "circle",
+                "opacity": 0.8,
+                "stroke": "white",
+                "strokeWidth": 0.5
+            },
+            "encoding": {
+                "longitude": {
+                    "field": "longitude_deg",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "latitude_deg",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "field": "type",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": ["small_airport", "medium_airport", "large_airport"],
+                        "range": [50, 200, 1000]
+                    },
+                    "legend": { 
+                        "title": "Airport Types",
+                        "values": ["small_airport", "medium_airport", "large_airport"],
+                        "labelExpr": "datum.label == 'small_airport' ? 'Small Airport' : datum.label == 'medium_airport' ? 'Medium Airport' : 'Large Airport'"
+                    }
+                },
+                "tooltip": [
+                    {"field": "name", "type": "nominal", "title": "Airport Name"},
+                    {"field": "type", "type": "nominal", "title": "Airport Type"}
+                ]
+            }
+        }
+    ]
+}
