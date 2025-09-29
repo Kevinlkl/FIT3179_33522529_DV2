@@ -79,7 +79,7 @@
                     "type": "nominal",
                     "scale": {
                         "domain": ["small_airport", "medium_airport", "large_airport"],
-                        "range": [50, 200, 1000]
+                        "range": [100, 300, 1200]
                     },
                     "legend": { 
                         "title": "Airport Types",
@@ -89,7 +89,8 @@
                 },
                 "tooltip": [
                     {"field": "name", "type": "nominal", "title": "Airport Name"},
-                    {"field": "type", "type": "nominal", "title": "Airport Type"}
+                    {"field": "type", "type": "nominal", "title": "Airport Type"},
+                    {"field": "region_name", "type": "nominal", "title": "Region Name"}
                 ]
             }
         }
