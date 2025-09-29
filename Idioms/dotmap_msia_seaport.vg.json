@@ -1,0 +1,75 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Distribution of Seaports in Malaysia",
+        "subtitle": "Locations and Information of Seaports across Malaysia",
+        "fontSize": 20,
+        "anchor": "start"
+    },
+    "width": 950,
+    "height": 400,
+    "projection": {
+        "type": "mercator",
+        "center": [109.5, 4],
+        "scale": 2650
+    },
+    "layer": [
+        {
+            "data": {
+                "sphere": true
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#e6f3ff"
+            }
+        },
+        {
+            "data": {
+                "graticule": {"step": [1, 1]}
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": null,
+                "stroke": "lightgray",
+                "strokeWidth": 0.5
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia_map.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "my"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "lightgray",
+                "stroke": "white",
+                "strokeWidth": 1
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia_seaports.csv",
+                "format": {"type": "csv"}
+            },
+            "mark": {
+                "type": "circle",
+                "opacity": 0.8,
+                "stroke": "white",
+                "strokeWidth": 0.5
+            },
+            "encoding": {
+                "longitude": {
+                    "field": "Longitude",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "Latitude",
+                    "type": "quantitative"
+                }
+            }
+        }
+    ]
+}
