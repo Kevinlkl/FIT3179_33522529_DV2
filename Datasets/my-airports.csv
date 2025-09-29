@@ -1,0 +1,136 @@
+id,ident,type,name,latitude_deg,longitude_deg,elevation_ft,continent,country_name,iso_country,region_name,iso_region,local_region,municipality,scheduled_service,gps_code,icao_code,iata_code,local_code,home_link,wikipedia_link,keywords,score,last_updated
+#meta +id,#meta +code,#loc +airport +type,#loc +airport +name,#geo +lat,#geo +lon,#geo +elevation +ft,#region +continent +code,#country +name,#country +code +iso2,#adm1 +name,#adm1 +code +iso,#adm1 +code +local,#loc +municipality +name,#status +scheduled,#loc +airport +code +gps,#loc +airport +code +icao,#loc +airport +code +iata,#loc +airport +code +local,#meta +url +airport,#meta +url +wikipedia,#meta +keywords,#meta +score,#date +updated
+26874,WMKK,large_airport,Kuala Lumpur International Airport,2.74558,101.709999,69,AS,Malaysia,MY,Selangor,MY-10,10,Sepang,1,WMKK,WMKK,KUL,,,https://en.wikipedia.org/wiki/Kuala_Lumpur_International_Airport,KLIA,1017575,2022-11-08T11:03:43+00:00
+26878,WMKP,medium_airport,Penang International Airport,5.297140121459961,100.2770004272461,11,AS,Malaysia,MY,Penang,MY-07,07,Penang,1,WMKP,WMKP,PEN,,,https://en.wikipedia.org/wiki/Penang_International_Airport,,750,2008-08-17T17:08:57+00:00
+26814,WBKK,medium_airport,Kota Kinabalu International Airport,5.932743,116.049324,10,AS,Malaysia,MY,Sabah,MY-12,12,Kota Kinabalu,1,WBKK,WBKK,BKI,,,https://en.wikipedia.org/wiki/Kota_Kinabalu_International_Airport,"Lapangan Terbang Antarabangsa Kota Kinabalu, Jesselton Airfield",750,2022-11-08T16:22:48+00:00
+26875,WMKL,medium_airport,Langkawi International Airport,6.329730033874512,99.72869873046875,29,AS,Malaysia,MY,Kedah,MY-02,02,Langkawi,1,WMKL,WMKL,LGK,,,https://en.wikipedia.org/wiki/Langkawi_International_Airport,,750,2008-08-17T17:08:57+00:00
+26808,WBGG,medium_airport,Kuching International Airport,1.487364,110.352859,89,AS,Malaysia,MY,Sarawak,MY-13,13,Kuching,1,WBGG,WBGG,KCH,,,https://en.wikipedia.org/wiki/Kuching_International_Airport,,750,2022-08-26T09:54:27+00:00
+26879,WMSA,medium_airport,Sultan Abdul Aziz Shah International Airport,3.130579948425293,101.54900360107422,90,AS,Malaysia,MY,Selangor,MY-10,10,Subang,1,WMSA,WMSA,SZB,,,https://en.wikipedia.org/wiki/Sultan_Abdul_Aziz_Shah_Airport,,750,2008-08-17T17:09:00+00:00
+26873,WMKJ,medium_airport,Senai International Airport,1.64131,103.669998,135,AS,Malaysia,MY,Johor,MY-01,01,Johor Bahru,1,WMKJ,WMKJ,JHB,,,https://en.wikipedia.org/wiki/Senai_International_Airport,Sultan Ismail Airport,750,2017-08-14T22:25:14+00:00
+26868,WMKC,medium_airport,Sultan Ismail Petra Airport,6.1668500900268555,102.29299926757812,16,AS,Malaysia,MY,Kelantan,MY-03,03,Kota Baharu,1,WMKC,WMKC,KBR,,,https://en.wikipedia.org/wiki/Sultan_Ismail_Petra_Airport,,750,2008-08-17T17:08:57+00:00
+26811,WBGR,medium_airport,Miri Airport,4.32201,113.987,59,AS,Malaysia,MY,Sarawak,MY-13,13,Miri,1,WBGR,WBGR,MYY,,,https://en.wikipedia.org/wiki/Miri_Airport,,750,2022-11-08T10:57:50+00:00
+26818,WBMU,medium_airport,Mulu Airport,4.048329830169678,114.80500030517578,80,AS,Malaysia,MY,Sarawak,MY-13,13,Mulu,1,WBMU,WBMU,MZV,,,https://en.wikipedia.org/wiki/Mulu_Airport,,750,2008-08-17T17:08:57+00:00
+26816,WBKS,medium_airport,Sandakan Airport,5.900899887084961,118.05899810791016,46,AS,Malaysia,MY,Sabah,MY-12,12,Sandakan,1,WBKS,WBKS,SDK,,,https://en.wikipedia.org/wiki/Sandakan_Airport,,750,2008-08-17T17:08:57+00:00
+26812,WBGS,medium_airport,Sibu Airport,2.2616,111.985001,122,AS,Malaysia,MY,Sarawak,MY-13,13,Sibu,1,WBGS,WBGS,SBW,,,https://en.wikipedia.org/wiki/Sibu_Airport,,750,2022-08-26T09:49:15+00:00
+26869,WMKD,medium_airport,Kuantan Airport,3.7753899097442627,103.20899963378906,58,AS,Malaysia,MY,Pahang,MY-06,06,Kuantan,1,WMKD,WMKD,KUA,,,https://en.wikipedia.org/wiki/Sultan_Haji_Ahmad_Shah_Airport,,750,2008-08-17T17:08:57+00:00
+26817,WBKW,medium_airport,Tawau Airport,4.31338,118.12152,57,AS,Malaysia,MY,Sabah,MY-12,12,Tawau,1,WBKW,WBKW,TWU,,,https://en.wikipedia.org/wiki/Tawau_Airport,,750,2023-12-24T07:09:52+00:00
+26866,WMKA,medium_airport,Sultan Abdul Halim Airport,6.189670085906982,100.39800262451172,15,AS,Malaysia,MY,Kedah,MY-02,02,Alor Satar,1,WMKA,WMKA,AOR,,,https://en.wikipedia.org/wiki/Sultan_Abdul_Halim_Airport,,750,2008-08-17T17:08:57+00:00
+26877,WMKN,medium_airport,Sultan Mahmud Airport,5.3826398849487305,103.10299682617188,21,AS,Malaysia,MY,Terengganu,MY-11,11,Kuala Terengganu,1,WMKN,WMKN,TGG,,,https://en.wikipedia.org/wiki/Sultan_Mahmud_Airport,,750,2008-08-17T17:08:57+00:00
+26876,WMKM,medium_airport,Malacca International Airport,2.265613,102.252778,35,AS,Malaysia,MY,Melaka,MY-04,04,Malacca,0,WMKM,WMKM,MKZ,,,https://en.wikipedia.org/wiki/Malacca_International_Airport,Batu Berendam,250,2022-06-26T04:16:31+00:00
+35209,WMPA,small_airport,Pulau Pangkor Airport,4.244719982147217,100.5530014038086,19,AS,Malaysia,MY,Perak,MY-08,08,Pangkor Island,1,WMPA,WMPA,PKG,,,https://en.wikipedia.org/wiki/Pangkor_Airport,,150,2008-08-17T17:08:59+00:00
+26872,WMKI,medium_airport,Sultan Azlan Shah Airport,4.567969799041748,101.09200286865234,130,AS,Malaysia,MY,Perak,MY-08,08,Ipoh,1,WMKI,WMKI,IPH,,,https://en.wikipedia.org/wiki/Sultan_Azlan_Shah_Airport,,750,2008-08-17T17:08:57+00:00
+26807,WBGB,medium_airport,Bintulu Airport,3.123850107,113.0199966,74,AS,Malaysia,MY,Sarawak,MY-13,13,Bintulu,1,WBGB,WBGB,BTU,,,https://en.wikipedia.org/wiki/Bintulu_Airport,,750,2011-10-23T15:16:29+00:00
+26813,WBKD,medium_airport,Lahad Datu Airport,5.03241,118.32376,45,AS,Malaysia,MY,Sabah,MY-12,12,Lahad Datu,1,WBKD,WBKD,LDU,,,https://en.wikipedia.org/wiki/Lahad_Datu_Airport,,750,2023-12-24T07:11:16+00:00
+26809,WBGJ,medium_airport,Limbang Airport,4.808300018310547,115.01000213623047,14,AS,Malaysia,MY,Sarawak,MY-13,13,Limbang,1,WBGJ,WBGJ,LMN,,,https://en.wikipedia.org/wiki/Limbang_Airport,,750,2008-08-17T17:08:57+00:00
+26864,WMBT,medium_airport,Tioman Airport,2.81818,104.160004,15,AS,Malaysia,MY,Pahang,MY-06,06,Tioman Island,1,WMBT,WMBT,TOD,,,https://en.wikipedia.org/wiki/Tioman_Airport,"Kampung Tekek, Sultan Ahmad Shah",750,2023-02-25T23:57:42+00:00
+30682,WBGZ,medium_airport,Bario Airport,3.734648,115.478548,3350,AS,Malaysia,MY,Sarawak,MY-13,13,Bario,1,WBGZ,WBGZ,BBN,,,https://en.wikipedia.org/wiki/Bario_Airport,,500,2022-06-19T20:48:26+00:00
+31866,WBGW,small_airport,Lawas Airport,4.84917,115.407997,5,AS,Malaysia,MY,Sarawak,MY-13,13,Lawas,1,WBGW,WBGW,LWY,,,https://en.wikipedia.org/wiki/Lawas_Airport,,150,2018-05-09T06:07:03+00:00
+26871,WMKF,small_airport,Simpang Airport,3.1122500896453857,101.7030029296875,111,AS,Malaysia,MY,Kuala Lumpur (Federal Territory),MY-14,14,Kuala Lumpur,0,WMKF,,,,,https://en.wikipedia.org/wiki/Sungai_Besi_Airport,,50,2008-08-17T17:08:57+00:00
+41319,WMPR,small_airport,LTS Pulau Redang Airport,5.764804,103.004942,36,AS,Malaysia,MY,Terengganu,MY-11,11,Redang,0,WMPR,WMPR,RDN,,,https://en.wikipedia.org/wiki/Redang_Airport,,50,2021-01-21T15:44:06+00:00
+26815,WBKL,medium_airport,Labuan Airport,5.301667,115.248333,101,AS,Malaysia,MY,Labuan (Federal Territory),MY-15,15,Labuan,1,WBKL,WBKL,LBU,,,https://en.wikipedia.org/wiki/Labuan_Airport,,750,2025-02-10T09:52:16+00:00
+26870,WMKE,medium_airport,Kerteh Airport,4.53722,103.427002,18,AS,Malaysia,MY,Terengganu,MY-11,11,Kerteh,0,WMKE,WMKE,KTE,,,https://en.wikipedia.org/wiki/Kerteh_Airport,,325,2024-05-17T08:53:40+00:00
+26867,WMKB,medium_airport,RMAF Butterworth Air Base,5.46592,100.390999,11,AS,Malaysia,MY,Penang,MY-07,07,Butterworth,0,WMKB,WMKB,BWH,,,https://en.wikipedia.org/wiki/RMAF_Butterworth_Air_Base,RAF Butterworth,250,2021-01-21T16:32:52+00:00
+31785,WBKT,small_airport,Kudat Airport,6.924111,116.837068,10,AS,Malaysia,MY,Sabah,MY-12,12,Kudat,1,WBKT,WBKT,KUD,,,https://en.wikipedia.org/wiki/Kudat_Airport,,150,2024-05-29T06:16:16+00:00
+35208,MY-LBP,small_airport,Long Banga Airport,3.202138,115.401811,750,AS,Malaysia,MY,Sarawak,MY-13,13,Long Banga,1,,,LBP,,,https://en.wikipedia.org/wiki/Long_Banga_Airport,,150,2022-06-19T20:28:13+00:00
+26820,WBTM,small_airport,Tanjung Manis Airport,2.17784,111.202003,15,AS,Malaysia,MY,Sarawak,MY-13,13,Belawai,0,WBTM,WBTM,TGC,,,https://en.wikipedia.org/wiki/Tanjung_Manis_Airport,,50,2024-04-04T10:04:44+00:00
+32664,WMAJ,small_airport,Jendarata Airport,3.89972,100.948997,8,AS,Malaysia,MY,Perak,MY-08,08,Jendarata,0,WMAJ,,,,,https://en.wikipedia.org/wiki/Jendarata_Airport,,50,2024-05-18T23:57:26+00:00
+31746,WBKG,small_airport,Keningau Airport,5.355487,116.164884,1036,AS,Malaysia,MY,Sabah,MY-12,12,Keningau,0,WBKG,WBKG,KGU,,,https://en.wikipedia.org/wiki/Keningau_Airport,,50,2024-05-29T06:14:24+00:00
+32666,WMAZ,small_airport,Segamat Airport,2.498023,102.839756,50,AS,Malaysia,MY,Johor,MY-01,01,Segamat,0,WMAZ,,,,,,,50,2021-01-21T15:51:25+00:00
+32472,WMBI,small_airport,Taiping (Tekah) Airport,4.866432,100.715381,40,AS,Malaysia,MY,Perak,MY-08,08,Taiping,0,WMBI,WMBI,TPG,,,https://en.wikipedia.org/wiki/Taiping_Airport,,50,2021-01-21T16:35:31+00:00
+41326,WMAN,small_airport,Sungai Tiang Airport,4.330277919769287,102.3949966430664,10,AS,Malaysia,MY,Pahang,MY-06,06,Taman Negara,0,WMAN,WMAN,SXT,,,,,50,2008-08-17T17:08:57+00:00
+26810,WBGM,medium_airport,Marudi Airport,4.178734,114.330318,103,AS,Malaysia,MY,Sarawak,MY-13,13,Marudi,1,WBGM,WBGM,MUR,,,https://en.wikipedia.org/wiki/Marudi_Airport,,750,2022-11-08T10:56:17+00:00
+350992,WBGK,medium_airport,Mukah Airport,2.881944,112.043333,20,AS,Malaysia,MY,Sarawak,MY-13,13,Mukah,1,WBGK,WBGK,MKM,,,https://en.wikipedia.org/wiki/Mukah_Airport,,500,2021-12-23T13:32:32+00:00
+31918,MY-0009,closed,Old Mukah STOLport,2.907082,112.077756,13,AS,Malaysia,MY,Sarawak,MY-13,13,Mukah,1,,,,,,https://en.wikipedia.org/wiki/Mukah_Airport,"MKM, WBGK",450,2022-08-26T09:48:11+00:00
+26863,WMAP,medium_airport,Kluang Airport,2.041389942,103.3069992,150,AS,Malaysia,MY,Johor,MY-01,01,Kluang,0,WMAP,,,,,https://en.wikipedia.org/wiki/Kluang_Airport,,250,2012-11-24T06:54:02+00:00
+30764,WBGQ,small_airport,Bakalalan Airport,3.974,115.617996,2900,AS,Malaysia,MY,Sarawak,MY-13,13,Bakalalan,1,WBGQ,WBGQ,BKM,,,https://en.wikipedia.org/wiki/Ba%27kelalan_Airport,,150,2024-05-17T08:50:46+00:00
+30770,WBGC,small_airport,Belaga Airport,2.652143,113.767043,200,AS,Malaysia,MY,Sarawak,MY-13,13,Belaga,0,WBGC,WBGC,BLG,,,https://en.wikipedia.org/wiki/Belaga_Airport,,150,2022-11-08T16:24:28+00:00
+31816,WBGF,small_airport,Long Lellang Airport,3.4210000038099997,115.1539993,1400,AS,Malaysia,MY,Sarawak,MY-13,13,Long Datih,1,WBGF,WBGF,LGL,,,https://en.wikipedia.org/wiki/Long_Lellang_Airport,,150,2015-02-20T13:40:50+00:00
+32086,WBGI,small_airport,Long Seridan Airport,3.976087,115.067303,607,AS,Malaysia,MY,Sarawak,MY-13,13,Long Seridan,1,WBGI,WBGI,ODN,,,https://en.wikipedia.org/wiki/Long_Seridan_Airport,,150,2024-05-29T06:12:36+00:00
+32462,WBKM,small_airport,Tomanggong Airport,5.40257,118.65763,26,AS,Malaysia,MY,Sabah,MY-12,12,Tomanggong,1,WBKM,WBKM,TMG,,,https://en.wikipedia.org/wiki/Tommanggong_Airport,,150,2021-10-15T17:27:01+00:00
+26865,WMGK,small_airport,Gong Kedak Airport,5.79957,102.484001,20,AS,Malaysia,MY,Kelantan,MY-03,03,,0,WMGK,,,,,https://en.wikipedia.org/wiki/RMAF_Gong_Kedak_Air_Base,,50,2024-05-29T06:16:35+00:00
+41322,MY-0052,closed,Bahau Airport,2.81667,102.417,214,AS,Malaysia,MY,Negeri Sembilan,MY-05,05,Bahau,0,,,,,,,"WMAA, WMAA",50,2025-02-25T14:49:58+00:00
+41323,WMAB,small_airport,Batu Pahat Airport,1.74666,102.987976,30,AS,Malaysia,MY,Johor,MY-01,01,Batu Pahat,0,WMAB,,,,,,,50,2022-08-26T10:59:56+00:00
+32660,WMAC,small_airport,Benta Airport,4.048643,101.985569,250,AS,Malaysia,MY,Pahang,MY-06,06,Benta,0,WMAC,,,,,,,50,2021-01-21T15:54:46+00:00
+32661,MY-0049,closed,Bentong Airport,3.550811,101.894041,350,AS,Malaysia,MY,Pahang,MY-06,06,Bentong,0,,,,,,,"WMAD, WMAD",50,2025-02-25T14:49:30+00:00
+32662,WMAE,small_airport,Bidor Airport,4.116388798,101.28199768066406,128,AS,Malaysia,MY,Perak,MY-08,08,Bidor,0,WMAE,,,,,,,50,2008-08-17T17:08:57+00:00
+41324,WMAG,small_airport,Dungun Airport,4.786290168762207,103.38200378417969,22,AS,Malaysia,MY,Terengganu,MY-11,11,Dungun,0,WMAG,,,,,,,50,2008-08-17T17:08:57+00:00
+41314,MY-0050,closed,Genting Airport,2.116667032,111.6999969,13,AS,Malaysia,MY,Sarawak,MY-13,13,Genting,0,,,,,,,"GTB, GTB, MY-GTB",50,2025-02-25T14:49:57+00:00
+32663,WMAH,small_airport,Grik Airport,5.432849,101.123658,420,AS,Malaysia,MY,Perak,MY-08,08,Grik,0,WMAH,,,,,,,50,2021-01-21T16:35:17+00:00
+41347,MY-0016,small_airport,Jeroco Airport,5.406111240386963,118.3963851928711,60,AS,Malaysia,MY,Sabah,MY-12,12,Jeroco,0,,,,,,,,50,2008-08-17T17:09:01+00:00
+31770,WBGP,small_airport,Kapit Airport,2.010523745,112.9314682,65,AS,Malaysia,MY,Sarawak,MY-13,13,Kapit,0,WBGP,WBGP,KPI,,,https://en.wikipedia.org/wiki/Kapit_Airport,,50,2014-02-20T11:22:17+00:00
+41348,MY-0017,small_airport,Kelabakan Airport,4.416388988494873,117.49639129638672,257,AS,Malaysia,MY,Sabah,MY-12,12,Kelabakan,0,,,,,,,,50,2008-08-17T17:09:02+00:00
+32642,WBKB,small_airport,Kota Belud Airport,6.36516,116.471001,46,AS,Malaysia,MY,Sabah,MY-12,12,Kota Belud,0,WBKB,,,,,https://de.wikipedia.org/wiki/Flughafen_Kota_Belud,,50,2024-06-07T18:07:37+00:00
+41349,MY-0018,small_airport,Kuala Kahaba Airport,5.116388798,116.14666748046875,1250,AS,Malaysia,MY,Sabah,MY-12,12,Kuala Kahaba,0,,,,,,,,50,2008-08-17T17:09:03+00:00
+41325,WMAL,small_airport,Kuala Kerai Airport,5.538680076599121,102.19499969482422,137,AS,Malaysia,MY,Kelantan,MY-03,03,Kuala Kerai,0,WMAL,,,,,,,50,2008-08-17T17:08:57+00:00
+41350,MY-0019,small_airport,Kuala Medamit Airport,4.466390132904053,114.91300201416016,50,AS,Malaysia,MY,Sarawak,MY-13,13,Kuala Medamit,0,,,,,,,,50,2008-08-17T17:15:21+00:00
+32643,WBKU,small_airport,Kuala Penyu Airport,5.597195,115.582695,6,AS,Malaysia,MY,Sabah,MY-12,12,Kuala Penyu,0,WBKU,,,,,,,50,2022-11-08T16:11:15+00:00
+41327,WMAQ,small_airport,Labis Airport,2.38024,103.03393,179,AS,Malaysia,MY,Johor,MY-01,01,Labis,0,WMAQ,,,,,,,50,2021-01-21T16:04:20+00:00
+32640,WBGO,small_airport,Lio Matu Airport,3.197567,115.308802,700,AS,Malaysia,MY,Sarawak,MY-13,13,Lio Matu,0,WBGO,,,,,,,50,2022-06-19T20:33:18+00:00
+356348,MY-0040,small_airport,Felda Lok Heng Airport,1.6945,104.08725,,AS,Malaysia,MY,Johor,MY-01,01,Lok Heng,0,,,,,,,,50,2022-08-26T10:21:03+00:00
+32639,WBGL,small_airport,Long Akah Airport,3.310909,114.785553,289,AS,Malaysia,MY,Sarawak,MY-13,13,Long Akah,0,WBGL,WBGL,LKH,,,https://en.wikipedia.org/wiki/Long_Akah_Airport,,50,2024-05-17T08:49:52+00:00
+32637,WBGA,small_airport,Long Atip Airport,3.816999912261963,114.69999694824219,300,AS,Malaysia,MY,Sarawak,MY-13,13,Long Atip,0,WBGA,,,,,,,50,2008-08-17T17:08:57+00:00
+32638,WBGE,small_airport,Long Geng Airport,2.617,114.133003,350,AS,Malaysia,MY,Sarawak,MY-13,13,Long Geng,0,WBGE,,,,,https://en.wikipedia.org/wiki/Long_Geng_Airport,,50,2024-05-18T23:56:47+00:00
+41317,MY-LLM,small_airport,Long Lama Airport,3.76667,114.466667,286,AS,Malaysia,MY,Sarawak,MY-13,13,Long Lama,0,,,,,,,,50,2024-04-07T20:18:05+00:00
+31550,WBKN,small_airport,Long Pasia Airport,4.409756,115.724473,3175,AS,Malaysia,MY,Sabah,MY-12,12,Long Miau,0,WBKN,WBKN,GSA,,,https://en.wikipedia.org/wiki/Long_Pasia_Airport,,50,2024-05-19T16:32:21+00:00
+31851,WBGD,small_airport,Long Semado Airport,4.217000008,115.5999985,2150,AS,Malaysia,MY,Sarawak,MY-13,13,Long Semado,0,WBGD,WBGD,LSM,,,https://en.wikipedia.org/wiki/Long_Semado_Airport,,50,2011-12-26T12:17:28+00:00
+31854,WBGU,small_airport,Long Sukang Airport,4.55222,115.494003,1200,AS,Malaysia,MY,Sarawak,MY-13,13,Long Sukang,0,WBGU,WBGU,LSU,,,https://en.wikipedia.org/wiki/Long_Sukang_Airport,,50,2024-05-17T08:51:14+00:00
+42332,MY-0054,closed,Lutong Airport,4.454601,114.003518,16,AS,Malaysia,MY,Sarawak,MY-13,13,Lutong,0,,,,,,https://web.archive.org/web/20220827174514/https://en.wikipedia.org/w/index.php?title=Lutong_Airport&oldid=995473364,"WMLU, WMLU",50,2025-02-25T14:50:05+00:00
+41351,MY-0020,small_airport,Marak Parak Airport,6.312222003936768,116.72972106933594,400,AS,Malaysia,MY,Sabah,MY-12,12,Marak Parak,0,,,,,,,,50,2008-08-17T17:09:05+00:00
+355054,MY-0034,small_airport,Pa Dali Airport,3.558464,115.555936,,AS,Malaysia,MY,Sarawak,MY-13,13,Marudi,0,,,,,,,,50,2022-06-19T20:45:34+00:00
+354865,MY-0032,small_airport,Terendak Camp Airstrip,2.295796,102.090654,,AS,Malaysia,MY,Melaka,MY-04,04,Mashid Tanah,0,,,,,,,,50,2022-06-26T04:14:14+00:00
+41352,MY-0021,small_airport,Meligan Airport,4.681666851043701,115.69805908203125,1800,AS,Malaysia,MY,Sabah,MY-12,12,Meligan,0,,,,,,,,50,2008-08-17T17:09:06+00:00
+41353,MY-0022,small_airport,Meridi Airport,6.0941667556762695,116.97000122070312,300,AS,Malaysia,MY,Sabah,MY-12,12,Meridi,0,,,,,,,,50,2008-08-17T17:09:07+00:00
+31888,WMAU,small_airport,Mersing Airport,2.389148,103.874183,10,AS,Malaysia,MY,Johor,MY-01,01,Mersing,0,WMAU,WMAU,MEP,,,https://en.wikipedia.org/wiki/Mersing_Airport,,50,2024-05-17T08:53:15+00:00
+41346,MY-0015,small_airport,Hunter (Morotai) Airport,4.4103899002075195,117.78700256347656,175,AS,Malaysia,MY,Sabah,MY-12,12,Morotai,0,,,,,,,,50,2008-08-17T17:09:00+00:00
+41318,MY-0051,closed,Mostyn Airport,4.616666,118.150002,200,AS,Malaysia,MY,Sabah,MY-12,12,Mostyn,0,,,,,,,"MZS, MY-MZS",50,2025-02-25T14:49:57+00:00
+32665,WMAV,small_airport,Muar / Bakri Airport,2.05215,102.65795,20,AS,Malaysia,MY,Johor,MY-01,01,Muar,0,WMAV,,,,,,,50,2022-06-26T04:15:30+00:00
+41354,MY-0023,small_airport,Nangoh Airport,5.966388702392578,117.2963867,100,AS,Malaysia,MY,Sabah,MY-12,12,Nangoh,0,,,,,,,,50,2008-08-17T17:09:08+00:00
+41321,WBKP,small_airport,Pamol Airport,5.996571,117.404795,36,AS,Malaysia,MY,Sabah,MY-12,12,Pamol,0,WBKP,WBKP,PAY,,,,,50,2022-08-15T14:40:47+00:00
+41355,MY-0024,small_airport,Pandewan Airport,4.974722385406494,116.47166442871094,1100,AS,Malaysia,MY,Sabah,MY-12,12,Pandewan,0,,,,,,,,50,2008-08-17T17:09:09+00:00
+41356,MY-0025,small_airport,Pa Ramudu Airport,3.555431,115.49503,2800,AS,Malaysia,MY,Sarawak,MY-13,13,Paramudu,0,,,,,,,,50,2022-06-19T20:44:08+00:00
+32669,WMBH,small_airport,Pengkalan Hulu Airport,5.695909,100.996797,1000,AS,Malaysia,MY,Perak,MY-08,08,Pengkalan Hulu,0,WMBH,,,,,,,50,2021-01-21T16:34:58+00:00
+41316,LAC,small_airport,Layang-Layang Airport,7.37157,113.844002,7,AS,Malaysia,MY,Sabah,MY-12,12,Pulau Layang-Layang (Swallow Reef),0,,,LAC,,,https://en.wikipedia.org/wiki/Swallow_Reef,"Pulau Layang-Layang, Swallow Reef, Layang-Layang Atoll",50,2022-11-08T04:30:04+00:00
+504745,MY-0044,small_airport,Putrajaya Recreational Airport,2.9027,101.66618,105,AS,Malaysia,MY,Putrajaya (Federal Territory),MY-16,16,Putrajaya,0,,,,,,,,50,2022-11-08T11:11:41+00:00
+32219,WBKR,small_airport,Ranau Airport,5.957793,116.680191,1800,AS,Malaysia,MY,Sabah,MY-12,12,Ranau,0,WBKR,WBKR,RNU,,,,,50,2022-11-08T15:53:26+00:00
+339962,MY-0003,small_airport,Cameron Highlands Airstrip,4.440291,101.421724,,AS,Malaysia,MY,Pahang,MY-06,06,Ringlet,0,,,,,,,,50,2022-06-15T19:10:14+00:00
+32408,WBKH,small_airport,Sahabat [Sahabat 16] Airport,5.087779998779297,119.09400177001953,40,AS,Malaysia,MY,Sabah,MY-12,12,Sahabat,0,WBKH,WBKH,SXS,,,,,50,2008-08-17T17:08:57+00:00
+30793,WBGN,small_airport,Sematan Airport,1.812678,109.765391,22,AS,Malaysia,MY,Sarawak,MY-13,13,Sematan,0,WBGN,WBGN,BSE,,,https://en.wikipedia.org/wiki/Sematan_Airport,,50,2024-05-17T08:50:23+00:00
+32330,WBKA,small_airport,Semporna Airport,4.454596,118.595023,60,AS,Malaysia,MY,Sabah,MY-12,12,Semporna,0,WBKA,WBKA,SMM,,,https://en.wikipedia.org/wiki/Semporna_Airport,,50,2024-05-29T06:13:24+00:00
+32352,WBKO,small_airport,Sepulot Airport,4.732999801635742,116.46700286865234,800,AS,Malaysia,MY,Sabah,MY-12,12,Sepulot,0,WBKO,WBKO,SPE,,,,,50,2008-08-17T17:08:57+00:00
+41320,MY-SPT,small_airport,Sipitang Airport,5.0833330154418945,115.55000305175781,44,AS,Malaysia,MY,Sabah,MY-12,12,Sipitang,0,,,SPT,,,,,50,2008-08-17T17:08:57+00:00
+32404,WMBA,small_airport,Sitiawan Airport,4.2222,100.6993,25,AS,Malaysia,MY,Perak,MY-08,08,Sitiawan,0,WMBA,WMBA,SWY,,,https://en.wikipedia.org/wiki/Sitiawan_Airport,,50,2015-08-09T15:45:18+00:00
+41357,MY-0026,small_airport,Sook Airport,5.141388893127441,116.30777740478516,,AS,Malaysia,MY,Sabah,MY-12,12,Sook,0,,,,,,,,50,2008-08-17T17:09:11+00:00
+32289,MY-0048,closed,Simanggang Airport,1.2219,111.4636,47,AS,Malaysia,MY,Sarawak,MY-13,13,Sri Aman,0,,,,,,,"Sri Aman, WBGY, SGG",50,2025-02-25T14:49:28+00:00
+41328,MY-0053,closed,Sungai Petani Airport,5.623781,100.541963,90,AS,Malaysia,MY,Kedah,MY-02,02,Sungai Petani,0,,,,,,,"WMBB, WMBB",50,2025-02-25T14:49:58+00:00
+41315,MY-GTK,small_airport,Sungai Tekai Airport,2.64118,102.89297,160,AS,Malaysia,MY,Johor,MY-01,01,Sungai Tekai,0,,,GTK,,,,,50,2021-01-21T16:02:58+00:00
+32434,WBKE,small_airport,Telupid Airport,5.62861,117.125999,343,AS,Malaysia,MY,Sabah,MY-12,12,Telupid,0,WBKE,WBKE,TEL,,,https://de.wikipedia.org/wiki/Flughafen_Telupid,,50,2024-05-20T22:11:14+00:00
+32667,WMBE,small_airport,Semantan Airport,3.480521,102.377901,100,AS,Malaysia,MY,Pahang,MY-06,06,Temerloh,0,WMBE,,,,,,,50,2021-01-21T15:58:47+00:00
+32668,WMBF,small_airport,Ulu Bernam Airport,3.740934,101.168504,10,AS,Malaysia,MY,Perak,MY-08,08,Ulu Bernam,0,WMBF,,,,,,,50,2021-11-09T10:47:30+00:00
+41358,MY-0027,small_airport,Ulu Tomani Airport,4.696944236755371,115.86333465576172,1300,AS,Malaysia,MY,Sabah,MY-12,12,Ulu Tomani,0,,,,,,,,50,2008-08-17T17:09:12+00:00
+41359,MY-0028,small_airport,Wallace Bay Airport,4.244166851043701,117.65611267089844,10,AS,Malaysia,MY,Sabah,MY-12,12,Wallace Bay,0,,,,,,,,50,2008-08-17T17:09:13+00:00
+356347,MY-0039,closed,Felda Air Tawar Airport,1.67001,104.02488,,AS,Malaysia,MY,Johor,MY-01,01,Air Tawar,0,,,,,,,,0,2022-08-26T10:23:56+00:00
+356349,MY-0041,closed,Felda Semenchu Airport,1.58898,104.16391,,AS,Malaysia,MY,Johor,MY-01,01,Bandar Penawar,0,,,,,,,,0,2022-08-26T10:23:34+00:00
+356343,MY-0035,heliport,Genting Heliport,3.42491,101.7914,,AS,Malaysia,MY,Pahang,MY-06,06,Genting Highlands,0,,,,,,,,0,2022-08-26T09:50:49+00:00
+354866,MY-0033,heliport,Johor Polo Club Helipad,1.479169,103.78247,,AS,Malaysia,MY,Johor,MY-01,01,Johor Bahru,0,,,,,,,,0,2022-06-09T17:03:24+00:00
+354857,MY-0011,heliport,Istana Negara Helipad,3.161877,101.666788,,AS,Malaysia,MY,Kuala Lumpur (Federal Territory),MY-14,14,Kuala Lumpur,0,,,,,,,,0,2022-06-09T13:42:09+00:00
+354858,MY-0012,heliport,Sunway Tower Helipad,3.157058,101.703002,,AS,Malaysia,MY,Kuala Lumpur (Federal Territory),MY-14,14,Kuala Lumpur,0,,,,,,,,0,2022-06-09T13:58:30+00:00
+339979,MY-0007,heliport,TLDM Tanjung Gelang Heliport,3.96909,103.43113,,AS,Malaysia,MY,Pahang,MY-06,06,Kuantan,0,,,,,,,,0,2021-01-21T16:11:32+00:00
+340521,MY-0008,heliport,Limbang Heliport,4.758474,115.009884,,AS,Malaysia,MY,Sarawak,MY-13,13,Limbang,0,,,,,,,,0,2021-02-01T16:59:51+00:00
+41329,WMLH,heliport,TLDM Lumut Heliport,4.233307,100.616276,15,AS,Malaysia,MY,Perak,MY-08,08,Lumut,0,WMLH,,,,,,,0,2021-01-21T16:09:58+00:00
+339978,MY-0006,heliport,KD Malaya Heliport,4.23302,100.61787,,AS,Malaysia,MY,Perak,MY-08,08,Lumut,0,,,,,,,,0,2021-01-21T16:09:18+00:00
+504737,MY-0042,heliport,Station Lima Helipad,7.37375,113.84672,,AS,Malaysia,MY,Sabah,MY-12,12,Pulau Layang-Layang (Swallow Reef),0,,,,,,,,0,2022-11-08T04:32:48+00:00
+504746,MY-0045,heliport,Putrajaya International Convention Centre Heliport,2.893768,101.679261,187,AS,Malaysia,MY,Putrajaya (Federal Territory),MY-16,16,Putrajaya,0,,,,,,,,0,2022-11-08T11:11:14+00:00
+356346,MY-0038,heliport,Saratok Hospital Heliport,1.74693,111.34072,,AS,Malaysia,MY,Sarawak,MY-13,13,Saratok,0,,,,,,,,0,2022-08-26T09:57:22+00:00
+356344,MY-0036,heliport,Sarikei Hospital Heliport,2.13516,111.49218,,AS,Malaysia,MY,Sarawak,MY-13,13,Sarikei,0,,,,,,,,0,2022-08-26T09:52:22+00:00
+354859,MY-0013,heliport,Sepang F1 Circuit Helipad,2.761501,101.739817,,AS,Malaysia,MY,Selangor,MY-10,10,Sepang,0,,,,,,,,0,2022-06-09T14:33:53+00:00
+354861,MY-0014,heliport,Pit Lane Exit Helipad,2.760815,101.734392,,AS,Malaysia,MY,Selangor,MY-10,10,Sepang,0,,,,,,,,0,2022-06-09T14:37:10+00:00
+354862,MY-0029,heliport,Sepang F1 North Helipad,2.763797,101.73718,,AS,Malaysia,MY,Selangor,MY-10,10,Sepang,0,,,,,,,,0,2022-06-09T14:43:33+00:00
+354863,MY-0030,heliport,Sepang F1 Parking A Helipad,2.758894,101.728113,,AS,Malaysia,MY,Selangor,MY-10,10,Sepang,0,,,,,,,,0,2022-06-09T15:02:59+00:00
+354864,MY-0031,heliport,KLATCC Heliport,2.764049,101.701175,,AS,Malaysia,MY,Selangor,MY-10,10,Sepang,0,,,,,,,,0,2022-06-09T15:13:08+00:00
+356345,MY-0037,heliport,Sibu Hospital Heliport,2.29754,111.88918,,AS,Malaysia,MY,Sarawak,MY-13,13,Sibu,0,,,,,,,,0,2022-08-26T09:56:06+00:00
+339977,MY-0005,heliport,KD Sultan Ismail Heliport,1.372145,104.093959,,AS,Malaysia,MY,Johor,MY-01,01,Tanjung Pengelih,0,,,,,,,,0,2021-01-21T16:07:47+00:00
+339976,MY-0004,heliport,Sultan Ahmad Haji Shah Hospital Helipad,3.45361,102.45338,,AS,Malaysia,MY,Pahang,MY-06,06,Temerloh,0,,,,,,,,0,2021-01-21T15:59:39+00:00
+314657,MY-0002,heliport,Station Mike Helipad,7.966962,113.916362,,AS,Malaysia,MY,Sabah,MY-12,12,Terumbu Mantanani (Mariveles Reef),0,,,,,,,,0,2022-11-08T04:28:29+00:00
+314656,MY-0001,heliport,Station Papa Helipad,8.11853,114.577985,,AS,Malaysia,MY,Sabah,MY-12,12,Terumbu Peninjau (Investigator Shoal),0,,,,,,,,0,2022-11-08T04:31:13+00:00
+504738,MY-0043,heliport,Station Sierra Helipad,8.1025,114.13812,,AS,Malaysia,MY,Sabah,MY-12,12,Terumbu Siput (Erica Reef),0,,,,,,,,0,2022-11-08T04:34:02+00:00
+354339,MY-0010,heliport,Station Uniform Helipad,7.60642,113.930363,,AS,Malaysia,MY,Sabah,MY-12,12,Terumbu Ubi (Ardasier Reef),0,,,,,,https://en.wikipedia.org/wiki/en:Ardasier Reef,,0,2022-11-08T04:29:12+00:00

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Employment Ratio by State in Malaysia (2023)",
+  "width": 950,
+  "height": 400,
+  "projection": {
+    "type": "mercator",
+    "center": [109.5, 4],
+    "scale": 2650
+  },
+  "layer": [
+    {
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e6f3ff"
+      }
+    },
+    {
+      "data": {
+        "graticule": {"step": [1, 1]}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "lightgray",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_hw9/main/malaysia_map.json",
+        "format": {
+          "type": "topojson",
+          "feature": "my"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_hw9/main/lfs_2023_both.csv",
+              "format": {"type": "csv"}
+            },
+            "key": "state",
+            "fields": ["ep_ratio"]
+          },
+          "default": null
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "color": {
+          "field": "ep_ratio",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear",
+            "range": ["#e5f5e0", "#a1d99b", "#74c476", "#41ab5d", "#238b45"],
+            "domain": [50, 80]
+          },
+          "legend": {
+            "title": "Employment Ratio (%)"
+          }
+        },
+        "tooltip": [
+          {"field": "properties.name", "type": "nominal", "title": "State"},
+          {"field": "ep_ratio", "type": "quantitative", "title": "Employment Ratio (%)", "format": ".1f"}
+        ]
+      }
+    }
+  ]
+}
