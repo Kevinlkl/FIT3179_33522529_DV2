@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap showing GDP and GNI across years",
+  "width": 600,
+  "height": 300,
+  "title": "GDP vs GNI (Real Annual Values)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/gdp_gni_annual_real.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "date": "string",
+        "gdp": "number",
+        "gni": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.series == 'abs'"
+    },
+    {
+      "calculate": "split(datum.date, '/')[2]",
+      "as": "Year"
+    },
+    {
+      "filter": "parseInt(datum.Year) % 4 == 0"
+    },
+    {
+      "fold": ["gdp", "gni"],
+      "as": ["Indicator", "Value"]
+    },
+    {
+      "aggregate": [{
+        "op": "mean",
+        "field": "Value",
+        "as": "Value"
+      }],
+      "groupby": ["Year", "Indicator"]
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "stroke": "black",
+    "strokeWidth": 0.1
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "field": "Indicator",
+      "type": "nominal",
+      "title": "Category"
+    },
+    "color": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Value (Millions RM)",
+      "scale": {
+        "scheme": "blues",
+        "type": "linear",
+        "domain": [100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000, 1100000, 1200000]
+      }
+    },
+    "tooltip": [
+      {"field": "Indicator", "type": "nominal", "title": "Metric"},
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Value (Millions RM)",
+        "format": ",.2f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Debug: All Data",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/trade/mys_trade_indicators_filtered.csv",
+    "format": {
+      "type": "csv",
+      "parse": {"Year": "number", "Value": "number"}
+    }
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "Year", "type": "quantitative"},
+    "y": {"field": "Value", "type": "quantitative"},
+    "tooltip": [
+      {"field": "Year"},
+      {"field": "Indicator Name"},
+      {"field": "Value"}
+    ]
+  }
+}

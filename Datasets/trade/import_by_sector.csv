@@ -1,0 +1,354 @@
+Year,Sector,Value
+2024,Agricultural raw materials,1.545181943
+2023,Agricultural raw materials,1.414875103
+2022,Agricultural raw materials,1.554043025
+2021,Agricultural raw materials,2.497382953
+2020,Agricultural raw materials,2.085153996
+2019,Agricultural raw materials,1.88452414
+2018,Agricultural raw materials,1.761731857
+2017,Agricultural raw materials,1.995134624
+2016,Agricultural raw materials,1.717206663
+2015,Agricultural raw materials,1.733730618
+2014,Agricultural raw materials,1.736688658
+2013,Agricultural raw materials,2.116949037
+2012,Agricultural raw materials,2.503212183
+2011,Agricultural raw materials,2.463678858
+2010,Agricultural raw materials,1.986410526
+2009,Agricultural raw materials,1.940708382
+2008,Agricultural raw materials,1.532812877
+2007,Agricultural raw materials,1.441738379
+2006,Agricultural raw materials,1.268897316
+2005,Agricultural raw materials,1.196942263
+2004,Agricultural raw materials,1.192901298
+2003,Agricultural raw materials,1.127039602
+2002,Agricultural raw materials,1.116593305
+2001,Agricultural raw materials,1.306538937
+2000,Agricultural raw materials,1.333442521
+1999,Agricultural raw materials,1.432888395
+1998,Agricultural raw materials,1.486051759
+1997,Agricultural raw materials,1.31527985
+1996,Agricultural raw materials,1.38452
+1995,Agricultural raw materials,1.232089759
+1994,Agricultural raw materials,1.190052361
+1993,Agricultural raw materials,1.158407379
+1992,Agricultural raw materials,1.077824395
+1991,Agricultural raw materials,1.041854655
+1990,Agricultural raw materials,1.30998633
+1989,Agricultural raw materials,1.569165812
+1988,Agricultural raw materials,1.664827757
+1987,Agricultural raw materials,1.789473594
+1986,Agricultural raw materials,1.47557259
+1985,Agricultural raw materials,1.268248695
+1984,Agricultural raw materials,1.583315561
+1983,Agricultural raw materials,1.345087072
+1982,Agricultural raw materials,1.362991489
+1981,Agricultural raw materials,1.667228691
+1980,Agricultural raw materials,1.865175438
+1979,Agricultural raw materials,2.063852755
+1978,Agricultural raw materials,2.493153152
+1977,Agricultural raw materials,3.051984178
+1976,Agricultural raw materials,2.964414908
+1975,Agricultural raw materials,2.05587542
+1974,Agricultural raw materials,2.017571066
+1973,Agricultural raw materials,3.03198915
+1972,Agricultural raw materials,2.40804631
+1971,Agricultural raw materials,1.934476912
+1970,Agricultural raw materials,2.148211686
+1969,Agricultural raw materials,3.250251521
+1968,Agricultural raw materials,2.311035731
+1967,Agricultural raw materials,2.259549588
+1966,Agricultural raw materials,2.438232753
+1965,Agricultural raw materials,2.740501687
+1964,Agricultural raw materials,2.566052532
+2024,Food,8.501516195
+2023,Food,8.34559944
+2022,Food,8.230882441
+2021,Food,8.86726797
+2020,Food,8.901122471
+2019,Food,7.744707841
+2018,Food,7.448245336
+2017,Food,7.9940878
+2016,Food,8.690980198
+2015,Food,8.749142784
+2014,Food,7.922959787
+2013,Food,7.59021804
+2012,Food,8.420509513
+2011,Food,8.809259672
+2010,Food,7.773114488
+2009,Food,8.027752744
+2008,Food,7.043459889
+2007,Food,5.887613212
+2006,Food,5.216993385
+2005,Food,5.169039557
+2004,Food,5.509104762
+2003,Food,5.045851002
+2002,Food,5.733638204
+2001,Food,5.252278718
+2000,Food,4.337383409
+1999,Food,5.42770752
+1998,Food,5.68331617
+1997,Food,5.374614874
+1996,Food,5.250243998
+1995,Food,4.778405297
+1994,Food,5.231176749
+1993,Food,5.996221311
+1992,Food,6.515272938
+1991,Food,6.354495598
+1990,Food,6.911036598
+1989,Food,8.963462684
+1988,Food,10.64058615
+1987,Food,11.18351094
+1986,Food,12.17935802
+1985,Food,11.764054
+1984,Food,11.45033322
+1983,Food,11.22939443
+1982,Food,11.66473756
+1981,Food,12.8709845
+1980,Food,11.86805275
+1979,Food,13.5515594
+1978,Food,16.43753751
+1977,Food,16.71688884
+1976,Food,16.66771356
+1975,Food,18.20320353
+1974,Food,17.99240577
+1973,Food,20.79729213
+1972,Food,20.76339052
+1971,Food,20.18728585
+1970,Food,21.53098791
+1969,Food,23.79645196
+1968,Food,25.01896889
+1967,Food,26.63519973
+1966,Food,25.75524928
+1965,Food,27.18970987
+1964,Food,29.92176239
+2024,Fuel,16.33595689
+2023,Fuel,19.09295374
+2022,Fuel,18.67945377
+2021,Fuel,12.53449003
+2020,Fuel,11.88822151
+2019,Fuel,14.54585791
+2018,Fuel,14.38233426
+2017,Fuel,12.77212507
+2016,Fuel,10.31072919
+2015,Fuel,12.34878719
+2014,Fuel,16.8359094
+2013,Fuel,16.20660932
+2012,Fuel,14.18851242
+2011,Fuel,11.75893624
+2010,Fuel,9.969616555
+2009,Fuel,8.211485386
+2008,Fuel,10.94253009
+2007,Fuel,8.892390545
+2006,Fuel,8.956832144
+2005,Fuel,8.144055875
+2004,Fuel,6.333685196
+2003,Fuel,5.514052219
+2002,Fuel,5.616284949
+2001,Fuel,5.237339939
+2000,Fuel,4.847240586
+1999,Fuel,3.031103078
+1998,Fuel,3.092499508
+1997,Fuel,2.924725625
+1996,Fuel,2.663942962
+1995,Fuel,2.252975784
+1994,Fuel,2.584764581
+1993,Fuel,3.636950172
+1992,Fuel,4.18944252
+1991,Fuel,4.225944596
+1990,Fuel,5.084607562
+1989,Fuel,4.783483403
+1988,Fuel,5.353123184
+1987,Fuel,7.148118335
+1986,Fuel,8.253258229
+1985,Fuel,12.10912084
+1984,Fuel,10.17396732
+1983,Fuel,13.78837041
+1982,Fuel,15.12468373
+1981,Fuel,17.18662687
+1980,Fuel,15.15352717
+1979,Fuel,12.0579528
+1978,Fuel,10.73754402
+1977,Fuel,12.7461486
+1976,Fuel,13.50904123
+1975,Fuel,12.02170094
+1974,Fuel,10.15108572
+1973,Fuel,6.626841267
+1972,Fuel,8.107625485
+1971,Fuel,13.05168897
+1970,Fuel,12.06913723
+1969,Fuel,13.55328207
+1968,Fuel,14.2282125
+1967,Fuel,13.42552831
+1966,Fuel,12.98992547
+1965,Fuel,11.6404741
+1964,Fuel,11.37791902
+2021,ICT goods,27.04
+2020,ICT goods,26.83
+2019,ICT goods,24.14
+2018,ICT goods,25.08
+2017,ICT goods,25.22
+2016,ICT goods,24.7
+2015,ICT goods,24.01
+2014,ICT goods,23.08
+2013,ICT goods,22.62
+2012,ICT goods,23.12
+2011,ICT goods,25.62
+2010,ICT goods,29.8
+2009,ICT goods,30.11
+2008,ICT goods,23.36
+2007,ICT goods,33.5
+2006,ICT goods,36.07
+2005,ICT goods,38.04
+2004,ICT goods,39.23
+2003,ICT goods,42.83
+2002,ICT goods,37.93
+2001,ICT goods,39.02
+2000,ICT goods,41.16
+2024,Insurance and financial services,5.906350508
+2023,Insurance and financial services,6.165966462
+2022,Insurance and financial services,7.413200335
+2021,Insurance and financial services,8.468772473
+2020,Insurance and financial services,8.563850006
+2019,Insurance and financial services,6.943762189
+2018,Insurance and financial services,6.967524909
+2017,Insurance and financial services,6.746969538
+2016,Insurance and financial services,6.92425796
+2015,Insurance and financial services,7.003702403
+2014,Insurance and financial services,7.041684246
+2013,Insurance and financial services,7.158889676
+2012,Insurance and financial services,7.88800535
+2011,Insurance and financial services,7.942895488
+2010,Insurance and financial services,8.235741167
+2009,Insurance and financial services,3.820760607
+2008,Insurance and financial services,3.421569732
+2007,Insurance and financial services,3.117536231
+2006,Insurance and financial services,3.159185852
+2005,Insurance and financial services,2.930272531
+2004,Insurance and financial services,3.243663532
+2003,Insurance and financial services,3.448396344
+2002,Insurance and financial services,3.297518439
+2001,Insurance and financial services,3.244387162
+2000,Insurance and financial services,2.794420669
+1999,Insurance and financial services,3.002078778
+2024,Manufactures,66.89986511
+2023,Manufactures,64.35898538
+2022,Manufactures,64.02263815
+2021,Manufactures,67.49587189
+2020,Manufactures,68.82639371
+2019,Manufactures,67.8592783
+2018,Manufactures,69.09166111
+2017,Manufactures,70.09296998
+2016,Manufactures,72.53240083
+2015,Manufactures,69.36811749
+2014,Manufactures,65.8088251
+2013,Manufactures,65.88586608
+2012,Manufactures,67.8539867
+2011,Manufactures,69.27488719
+2010,Manufactures,73.30039907
+2009,Manufactures,75.21324652
+2008,Manufactures,65.33537899
+2007,Manufactures,75.12042753
+2006,Manufactures,77.04993315
+2005,Manufactures,78.89133891
+2004,Manufactures,80.35354635
+2003,Manufactures,82.31158552
+2002,Manufactures,79.90264976
+2001,Manufactures,82.17699642
+2000,Manufactures,83.81732844
+1999,Manufactures,83.67522762
+1998,Manufactures,84.20162973
+1997,Manufactures,83.08231476
+1996,Manufactures,82.82624901
+1995,Manufactures,83.63604299
+1994,Manufactures,84.03859287
+1993,Manufactures,82.20948036
+1992,Manufactures,82.70458325
+1991,Manufactures,80.86072525
+1990,Manufactures,78.21315765
+1989,Manufactures,76.31238707
+1988,Manufactures,76.19062053
+1987,Manufactures,76.23659948
+1986,Manufactures,74.84743844
+1985,Manufactures,71.59743064
+1984,Manufactures,73.64585317
+1983,Manufactures,69.58137381
+1982,Manufactures,67.74064782
+1981,Manufactures,64.02307388
+1980,Manufactures,66.55909331
+1979,Manufactures,66.96484145
+1978,Manufactures,65.29841488
+1977,Manufactures,63.07429055
+1976,Manufactures,62.68490685
+1975,Manufactures,61.73098877
+1974,Manufactures,64.54209476
+1973,Manufactures,64.45220443
+1972,Manufactures,62.64599205
+1971,Manufactures,59.03777987
+1970,Manufactures,56.91772986
+1969,Manufactures,52.19505512
+1968,Manufactures,50.54536453
+1967,Manufactures,52.45766077
+1966,Manufactures,53.98566003
+1965,Manufactures,51.83318895
+1964,Manufactures,48.178735
+2024,Ores and metals,5.02942721
+2023,Ores and metals,5.406005748
+2022,Ores and metals,5.419093913
+2021,Ores and metals,6.187292908
+2020,Ores and metals,6.434475884
+2019,Ores and metals,6.232374502
+2018,Ores and metals,5.471255969
+2017,Ores and metals,5.097681157
+2016,Ores and metals,4.95715319
+2015,Ores and metals,5.711637512
+2014,Ores and metals,5.652234513
+2013,Ores and metals,5.990226281
+2012,Ores and metals,5.021877948
+2011,Ores and metals,5.660897585
+2010,Ores and metals,5.180632025
+2009,Ores and metals,4.418163353
+2008,Ores and metals,5.187861179
+2007,Ores and metals,5.367268963
+2006,Ores and metals,4.494954385
+2005,Ores and metals,3.66063948
+2004,Ores and metals,3.643955626
+2003,Ores and metals,2.831803945
+2002,Ores and metals,2.670690877
+2001,Ores and metals,2.971055794
+2000,Ores and metals,3.000158805
+1999,Ores and metals,3.235655679
+1998,Ores and metals,2.941104775
+1997,Ores and metals,3.204833068
+1996,Ores and metals,3.1118293
+1995,Ores and metals,3.198760125
+1994,Ores and metals,3.06074255
+1993,Ores and metals,3.419733043
+1992,Ores and metals,3.276048828
+1991,Ores and metals,3.304050387
+1990,Ores and metals,3.468817545
+1989,Ores and metals,4.226117182
+1988,Ores and metals,4.023757654
+1987,Ores and metals,3.339797393
+1986,Ores and metals,2.878748241
+1985,Ores and metals,2.92660591
+1984,Ores and metals,2.889616088
+1983,Ores and metals,3.67155613
+1982,Ores and metals,3.523036785
+1981,Ores and metals,3.599277783
+1980,Ores and metals,3.981267252
+1979,Ores and metals,4.74352966
+1978,Ores and metals,4.177118881
+1977,Ores and metals,3.78144887
+1976,Ores and metals,3.56380187
+1975,Ores and metals,5.241311522
+1974,Ores and metals,4.437710246
+1973,Ores and metals,3.997047069
+1972,Ores and metals,4.844771241
+1971,Ores and metals,4.533259722
+1970,Ores and metals,5.826562912
+1969,Ores and metals,5.59451131
+1968,Ores and metals,6.064415558
+1967,Ores and metals,2.960188611
+1966,Ores and metals,2.583009112
+1965,Ores and metals,4.421671234
+1964,Ores and metals,4.798587254
