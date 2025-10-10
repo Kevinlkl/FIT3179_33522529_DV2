@@ -1,0 +1,75 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Malaysia Export vs Import of Goods and Services(2015-2024)",
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "font": "Serif"
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/trade/mys_trade_indicators_filtered.csv",
+        "format": {"type": "csv"}
+    },
+    "transform": [
+        {
+            "filter": "datum['Indicator Name'] == 'Exports of goods and services (% of GDP)' || datum['Indicator Name'] == 'Imports of goods and services (% of GDP)'"
+        },
+        {
+            "filter": "datum['Year'] >= 1970 && datum['Year'] <= 2024"
+        },
+        {
+            "calculate": "datum['Indicator Name'] == 'Exports of goods and services (% of GDP)' ? 'Exports' : 'Imports'",
+            "as": "Trade_Type"
+        }
+    ],
+    "mark": {
+        "type": "line",
+        "point": false,
+        "tooltip": true,
+        "strokeWidth": 2
+    },
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "quantitative",
+            "title": "Year",
+            "axis": {
+                "labelAngle": -45,
+                "tickCount": 11,
+                "format": "d"
+            }
+        },
+        "y": {
+            "field": "Value",
+            "type": "quantitative",
+            "title": "Percentage of GDP (%)",
+            "axis": {"grid": true, "tickCount": 5},
+            "scale": {"domain": [0, 150]}
+        },
+        "color": {
+            "field": "Trade_Type",
+            "type": "nominal",
+            "title": "Trade Type",
+            "scale": {
+                "domain": ["Exports", "Imports"],
+                "range": ["#1f77b4", "#ff7f0e"]
+            }
+        },
+        "shape": {
+            "field": "Trade_Type",
+            "type": "nominal",
+            "legend": null,
+            "scale": {
+                "domain": ["Exports", "Imports"],
+                "range": ["circle", "square"]
+            }
+        },
+        "tooltip": [
+            {"field": "Year", "type": "quantitative", "title": "Year"},
+            {"field": "Trade_Type", "type": "nominal", "title": "Trade Type"},
+            {"field": "Value", "type": "quantitative", "title": "Percentage of GDP (%)"}
+        ]
+    }
+}
