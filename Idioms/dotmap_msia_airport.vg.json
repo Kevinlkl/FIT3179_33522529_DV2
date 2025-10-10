@@ -63,7 +63,8 @@
                 "type": "circle",
                 "opacity": 0.8,
                 "stroke": "white",
-                "strokeWidth": 0.5
+                "strokeWidth": 0.5,
+                "size": 100
             },
             "encoding": {
                 "longitude": {
@@ -74,16 +75,15 @@
                     "field": "latitude_deg",
                     "type": "quantitative"
                 },
-                "size": {
+                "color": {
                     "field": "type",
                     "type": "nominal",
                     "scale": {
                         "domain": ["small_airport", "medium_airport", "large_airport"],
-                        "range": [100, 300, 1200]
+                        "range": ["#FFD700", "#FF8C00", "#FF0000"]
                     },
                     "legend": { 
                         "title": "Airport Types",
-                        "values": ["small_airport", "medium_airport", "large_airport"],
                         "labelExpr": "datum.label == 'small_airport' ? 'Small Airport' : datum.label == 'medium_airport' ? 'Medium Airport' : 'Large Airport'"
                     }
                 },
