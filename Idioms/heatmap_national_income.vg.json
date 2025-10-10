@@ -1,18 +1,18 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Heatmap showing GDP and GNI across years",
   "width": 600,
   "height": 300,
-  "title": "GDP vs GNI (Real Annual Values)",
+  "title": {
+    "text": "GDP vs GNI (Real Annual Values)",
+    "fontSize": 20,
+    "fontWeight": "bold",
+    "font": "Serif",
+    "anchor": "start"
+  },
   "data": {
-    "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/gdp_gni_annual_real.csv",
+    "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/gdp_gni/gdp_gni_annual_real.csv",
     "format": {
-      "type": "csv",
-      "parse": {
-        "date": "string",
-        "gdp": "number",
-        "gni": "number"
-      }
+      "type": "csv"
     }
   },
   "transform": [
@@ -20,7 +20,7 @@
       "filter": "datum.series == 'abs'"
     },
     {
-      "calculate": "split(datum.date, '/')[2]",
+      "calculate": "year(datum.date)",
       "as": "Year"
     },
     {
@@ -59,7 +59,7 @@
     "color": {
       "field": "Value",
       "type": "quantitative",
-      "title": "Value (Millions RM)",
+      "title": "Value (RM)",
       "scale": {
         "scheme": "blues",
         "type": "linear",
@@ -72,7 +72,7 @@
       {
         "field": "Value",
         "type": "quantitative",
-        "title": "Value (Millions RM)",
+        "title": "Value (RM)",
         "format": ",.2f"
       }
     ]

@@ -4,7 +4,8 @@
         "text": "Distribution of Airports in Malaysia",
         "subtitle": "Locations and Information of Airports across Malaysia",
         "fontSize": 20,
-        "anchor": "start"
+        "anchor": "start",
+        "font": "Serif"
     },
     "width": 950,
     "height": 400,

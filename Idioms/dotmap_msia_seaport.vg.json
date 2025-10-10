@@ -4,7 +4,8 @@
         "text": "Distribution of Seaports in Malaysia",
         "subtitle": "Locations and Information of Seaports across Malaysia",
         "fontSize": 20,
-        "anchor": "start"
+        "anchor": "start",
+        "font": "Serif"
     },
     "width": 950,
     "height": 400,
