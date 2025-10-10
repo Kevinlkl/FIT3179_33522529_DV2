@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Malaysia Productivity by Sector (Output per Hour)",
+        "subtitle": "Productivity trends across different sectors over time",
+        "fontSize": 18,
+        "fontWeight": "bold",
+        "font": "Serif"
+    },
+    "width": 700,
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/productivity/productivity_annual.csv",
+        "format": {"type": "csv"}
+    },
+"transform": [
+    {
+        "filter": "datum.sector == 'p1' || datum.sector == 'p2' || datum.sector == 'p3' || datum.sector == 'p4' || datum.sector == 'p5'"
+    },
+    {
+        "filter": "datum.series == 'abs'"
+    },
+    {
+        "calculate": "toDate(datum.date)",
+        "as": "parsed_date"
+    },
+    {
+        "joinaggregate": [
+            {"op": "min", "field": "output_hour", "as": "min_value"},
+            {"op": "max", "field": "output_hour", "as": "max_value"}
+        ],
+        "groupby": ["sector"]
+    },
+    {
+        "calculate": "((datum.output_hour - datum.min_value) / (datum.max_value - datum.min_value)) * 100",
+        "as": "normalized_productivity"
+    }
+],
+    "mark": {
+        "type": "line",
+        "point": false,
+        "strokeWidth": 3,
+        "tooltip": true
+    },
+    "encoding": {
+        "x": {
+            "field": "parsed_date",
+            "type": "temporal",
+            "title": "Year",
+            "axis": {
+                "format": "%Y",
+                "tickCount": 8
+            }
+        },
+        "y": {
+            "field": "normalized_productivity",
+            "type": "quantitative",
+            "title": "Output per Hour (Productivity Index)",
+            "scale": {"zero": false}
+        },
+        "color": {
+            "field": "sector",
+            "type": "nominal",
+            "title": "Sector",
+            "scale": {
+                "domain": ["p1", "p2", "p3", "p4", "p5"],
+                "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd"]
+            },
+            "legend": {
+                "title": "Productivity Sectors",
+                "titleFontSize": 12,
+                "labelFontSize": 11,
+                "labelExpr": "upper(datum.value)"
+            }
+        },
+        "tooltip": [
+            {"field": "parsed_date", "type": "temporal", "title": "Year", "format": "%Y"},
+            {"field": "sector", "type": "nominal", "title": "Sector"},
+            {"field": "output_hour", "type": "quantitative", "title": "Output per Hour", "format": ".1f"}
+        ]
+    }
+}
