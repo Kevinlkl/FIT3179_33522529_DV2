@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
         "text": "Malaysia Trade: Import vs Export by Sector (2021-2024)",
-        "fontSize": 20,
+        "fontSize": 24,
         "fontWeight": "bold",
         "font": "Serif",
         "anchor": "start"
@@ -52,7 +52,7 @@
         "title": "Year"
     },
     "spec": {
-        "width": 150,
+        "width": 260,
         "height": 150,
         "mark": {
             "type": "arc",

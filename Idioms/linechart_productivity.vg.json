@@ -3,13 +3,13 @@
     "title": {
         "text": "Malaysia Productivity by Sector (Normalized Output Per Hour, 2015=100)",
         "subtitle": "Productivity output per hour normalized to 2015 baseline across sectors",
-        "fontSize": 20,
+        "fontSize": 24,
         "fontWeight": "bold",
         "font": "Serif",
         "anchor": "start"
     },
-    "width": 700,
-    "height": 400,
+    "width": 820,
+    "height": 300,
     "data": {
         "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/productivity/productivity_annual_normalized.csv",
         "format": {"type": "csv"}

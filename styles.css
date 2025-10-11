@@ -1,0 +1,61 @@
+/* Global styles */
+body {
+  margin: 0;
+}
+
+/* Top banner */
+.top-banner {
+  position: sticky;
+  top: 0;
+  width: 1400;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 16px 10px;
+  color: #222;
+  letter-spacing: 0.5px;
+  font-size: 48px;
+}
+
+/* Main content wrapper */
+main {
+  display: block;
+  padding: 16px;
+}
+
+/* Two-column layout for chart + explanation */
+.viz-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.viz-chart {
+  flex: 1 1 65%;
+  min-width: 0; /* prevent overflow in flex */
+  padding-right: 24px;
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+
+.viz-text {
+  flex: 1 1 35%;
+  max-width: 450px;
+  line-height: 1.5;
+  padding-top: 16px;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 900px) {
+  .viz-row { flex-direction: column; }
+  .viz-text { max-width: none; }
+}
+
+/* Ensure embed respects container width */
+.viz-chart .vega-embed, 
+.viz-chart .vega-embed > div {
+  width: 100% !important;
+}
