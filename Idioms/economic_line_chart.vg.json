@@ -1,0 +1,127 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 500,
+    "title": "Evolution of Malaysia's Economic Indicators Over Time",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia%20economic%20dataset.csv"
+    },
+    "transform": [
+        {
+            "timeUnit": "yearmonth",
+            "field": "date",
+            "as": "date_parsed"
+        },
+        {
+            "filter": "month(datum.date) == 0"
+        },
+        {
+            "fold": ["leading", "coincident", "lagging"],
+            "as": ["indicator", "value"]
+        },
+        {
+            "calculate": "datum.indicator == 'leading' ? 'Trend prediction of economic activity' : datum.indicator == 'coincident' ? 'Current economic state' : datum.indicator == 'lagging' ? 'Confirms economic trends after they occur' : ''",
+            "as": "description"
+        }
+    ],
+    "layer": [
+        {
+            "data": {"values": [
+                {"start": "1/1/1992", "end": "1/1/1997", "label": "1990s Economic Growth Period"},
+                {"start": "1/1/2000", "end": "1/1/2008", "label": "2000s Commodity Boom"}
+            ]},
+            "mark": {"type": "rect", "opacity": 0.18, "color": "#808080"},
+            "encoding": {
+                "x": {"field": "start", "type": "temporal"},
+                "x2": {"field": "end"},
+                "y": {"datum": 0},
+                "y2": {"datum": 130}
+            }
+        },
+        {
+            "params": [
+                {
+                    "name": "indicator_highlight",
+                    "select": {
+                        "type": "point",
+                        "fields": ["indicator"]
+                    },
+                    "bind": "legend"
+                }
+            ],
+            "mark": {
+                "type": "line",
+                "interpolate": "linear",
+                "point": false,
+                "strokeWidth": 2
+            },
+            "encoding": {
+                "x": {
+                    "field": "date",
+                    "type": "temporal",
+                    "title": "Year",
+                    "axis": {
+                        "format": "%Y"
+                    }
+                },
+                "y": {
+                    "field": "value",
+                    "type": "quantitative",
+                    "title": "Index Value (Unitless)"
+                },
+                "color": {
+                    "field": "indicator",
+                    "type": "nominal",
+                    "title": "Economic Indicator",
+                    "scale": {
+                        "domain": ["leading", "coincident", "lagging"],
+                        "range": ["#CC79A7", "#0072B2", "#009E73"]
+                    },
+                    "legend": {
+                        "orient": "right",
+                        "titleFontSize": 12,
+                        "labelFontSize": 11,
+                        "labelExpr": "datum.value == 'leading' ? 'Leading Index' : datum.value == 'coincident' ? 'Coincident Index' : 'Lagging Index'"
+                    }
+                },
+                "opacity": {
+                    "condition": {"param": "indicator_highlight", "value": 0.8},
+                    "value": 0.2
+                },
+                "tooltip": [
+                    {"field": "date", "type": "temporal", "title": "Date", "format": "%B %Y"},
+                    {"field": "indicator", "type": "nominal", "title": "Indicator"},
+                    {"field": "value", "type": "quantitative", "title": "Value (unitless)", "format": ".1f"},
+                    {"field": "description", "type": "nominal", "title": "Description"}
+                ]
+            }
+        },
+        {
+            "data": {"values": [
+                {"date": "1/1/1995", "text": "1990s Economic Growth Period", "y_pos": 130},
+                {"date": "1/1/2004", "text": "2000s Commodity Boom", "y_pos": 130}
+            ]},
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "bottom",
+                "dy": -5,
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "x": {"field": "date", "type": "temporal"},
+                "y": {"field": "y_pos", "type": "quantitative"},
+                "text": {"field": "text", "type": "nominal"},
+                "color": {
+                    "condition": {
+                        "test": "datum.text == '1990s Economic Growth Period'",
+                        "value": "black"
+                    },
+                    "value": "black"
+                }
+            }
+        }
+    ]
+}

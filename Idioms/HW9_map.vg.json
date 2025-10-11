@@ -1,12 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "Employment Ratio by State in Malaysia (2023)",
-    "fontSize": 20,
-    "fontWeight": "bold",
-    "font": "Serif",
-    "anchor": "start"
-  },
+  "title": "Employment Ratio by State in Malaysia (2023)",
   "width": 950,
   "height": 400,
   "projection": {
@@ -62,18 +56,45 @@
         "stroke": "white",
         "strokeWidth": 1
       },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
       "encoding": {
         "color": {
           "field": "ep_ratio",
           "type": "quantitative",
           "scale": {
-            "type": "linear",
+            "type": "quantile",
             "range": ["#e5f5e0", "#a1d99b", "#74c476", "#41ab5d", "#238b45"],
             "domain": [50, 80]
           },
           "legend": {
-            "title": "Employment Ratio (%)"
+            "title": "Employment Ratio (%)",
+            "values": [0, 50, 60, 70, 80]
           }
+        },
+        "stroke": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": "#333333"
+          },
+          "value": "white"
+        },
+        "strokeWidth": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 3
+          },
+          "value": 1
         },
         "tooltip": [
           {"field": "properties.name", "type": "nominal", "title": "State"},
