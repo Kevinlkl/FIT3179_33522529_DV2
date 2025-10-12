@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 880,
+    "width": 1010,
     "height": 400,
     "title": {
         "text": "Evolution of Malaysia's Economic Indicators Over Time",
@@ -84,7 +84,7 @@
                         "range": ["#CC79A7", "#0072B2", "#009E73"]
                     },
                     "legend": {
-                        "orient": "right",
+                        "orient": "bottom-right",
                         "titleFontSize": 12,
                         "labelFontSize": 11,
                         "labelExpr": "datum.value == 'leading' ? 'Leading Index' : datum.value == 'coincident' ? 'Coincident Index' : 'Lagging Index'"

@@ -7,7 +7,7 @@
         "anchor": "start",
         "font": "Serif"
     },
-    "width": 910,
+    "width": 1050,
     "height": 400,
     "projection": {
         "type": "mercator",
@@ -76,6 +76,61 @@
                     {"field": "Port Name", "type": "nominal", "title": "Port Name"},
                     {"field": "Port Code", "type": "nominal", "title": "Port Code"}
                 ]
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {"longitude": 100.8, "latitude": 2.5, "label": "Strait of Malacca"},
+                    {"longitude": 103.6, "latitude": 1.1, "label": "Tebrau Strait"},
+                    {"longitude": 113, "latitude": 6, "label": "South China Sea"}
+                ]
+            },
+            "mark": {
+                "type": "text",
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "fontStyle": "italic",
+                "color": "#1f4e79",
+                "angle": 15
+            },
+            "encoding": {
+                "longitude": {"field": "longitude", "type": "quantitative"},
+                "latitude": {"field": "latitude", "type": "quantitative"},
+                "text": {"field": "label", "type": "nominal"}
+            }
+        },
+        {
+            "data": {"values": [{"legend": "Seaports"}]},
+            "mark": {
+                "type": "point",
+                "filled": true,
+                "size": 200,
+                "color": "#2E86AB",
+                "stroke": "white",
+                "strokeWidth": 1.5,
+                "opacity": 0.9
+            },
+            "encoding": {
+                "x": {"value": 950},
+                "y": {"value": 30},
+                "tooltip": {"value": null}
+            }
+        },
+        {
+            "data": {"values": [{"text": "Seaports"}]},
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dx": 10,
+                "fontSize": 12,
+                "color": "#333"
+            },
+            "encoding": {
+                "x": {"value": 950},
+                "y": {"value": 30},
+                "text": {"field": "text", "type": "nominal"}
             }
         }
     ]

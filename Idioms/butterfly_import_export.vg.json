@@ -7,7 +7,7 @@
     "font": "Serif",
     "anchor": "start"
   },
-  "width": 1310,
+  "width": 1400,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/trade/mys_trade_indicators_filtered.csv",
@@ -60,7 +60,10 @@
           "field": "Trade_Type",
           "type": "nominal",
           "scale": {"domain": ["Import", "Export"], "range": ["#ff7f0e", "#1f77b4"]},
-          "legend": {"title": "Trade Type"}
+          "legend": {
+            "title": "Trade Type",
+            "orient": "top-right"
+        }
         },
         "tooltip": [
           {"field": "Year", "type": "ordinal"},

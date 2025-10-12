@@ -7,7 +7,7 @@
         "anchor": "start",
         "font": "Serif"
     },
-    "width": 910,
+    "width": 1050,
     "height": 400,
     "projection": {
         "type": "mercator",
@@ -85,7 +85,9 @@
                     },
                     "legend": { 
                         "title": "Airport Types",
-                        "labelExpr": "datum.label == 'small_airport' ? 'Small Airport' : datum.label == 'medium_airport' ? 'Medium Airport' : 'Large Airport'"
+                        "labelExpr": "datum.label == 'small_airport' ? 'Small Airport' : datum.label == 'medium_airport' ? 'Medium Airport' : 'Large Airport'",
+                        "orient": "top-right",
+                        "direction": "horizontal"
                     }
                 },
                 "tooltip": [

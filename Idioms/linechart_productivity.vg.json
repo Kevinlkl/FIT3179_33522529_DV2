@@ -8,7 +8,7 @@
         "font": "Serif",
         "anchor": "start"
     },
-    "width": 880,
+    "width": 1010,
     "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/productivity/productivity_annual_normalized.csv",
@@ -61,6 +61,7 @@
             },
             "legend": {
                 "title": "Productivity Sectors",
+                "orient": "top-right",
                 "titleFontSize": 12,
                 "labelFontSize": 11,
                 "labelExpr": "datum.value == 'p1' ? 'Agriculture' : datum.value == 'p2' ? 'Mining and quarrying' : datum.value == 'p3' ? 'Manufacturing' : datum.value == 'p4' ? 'Construction' : 'Services'"

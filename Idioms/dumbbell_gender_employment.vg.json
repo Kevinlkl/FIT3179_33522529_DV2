@@ -7,7 +7,7 @@
     "font": "Serif",
     "anchor": "start"
   },
-  "width": 880,
+  "width": 970,
   "height": { "step": 26 },
   "data": {
     "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/lfs_state_sex.csv",
