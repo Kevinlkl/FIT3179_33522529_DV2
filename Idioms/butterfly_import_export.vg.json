@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Malaysia Trade: Import vs Export by Sector (2021–2024)",
+    "fontSize": 24,
+    "fontWeight": "bold",
+    "font": "Serif",
+    "anchor": "start"
+  },
+  "width": 1310,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/trade/mys_trade_indicators_filtered.csv",
+    "format": { "type": "csv" }
+  },
+  "params": [
+    {
+      "name": "sector_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Manufactures","Food","Agricultural raw materials","Fuel","Ores and metals"
+        ],
+        "name": "Select Sector: "
+      },
+      "value": "Manufactures"
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Year == 2021 || datum.Year == 2022 || datum.Year == 2023 || datum.Year == 2024"},
+    {"filter": "indexof(datum['Indicator Name'], sector_selection) >= 0"},
+    {
+      "calculate": "indexof(lower(datum['Indicator Name']), 'imports') >= 0 ? 'Import' : 'Export'",
+      "as": "Trade_Type"
+    },
+    {
+      "aggregate": [{"op": "sum", "field": "Value", "as": "Total_Value"}],
+      "groupby": ["Year", "Trade_Type"]
+    },
+    {"calculate": "datum.Trade_Type == 'Import' ? -datum.Total_Value : datum.Total_Value", "as": "Signed_Value"},
+    {"calculate": "abs(datum.Signed_Value)", "as": "Abs_Value"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rule", "stroke": "#888", "strokeWidth": 1},
+      "encoding": { "x": { "value": 0 } }
+    },
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "y": {"field": "Year", "type": "ordinal", "sort": "ascending", "title": "Year"},
+        "x": {
+          "field": "Signed_Value",
+          "type": "quantitative",
+          "title": "% of merchandise trade",
+          "scale": { "domain": [-100, 100], "domainMid": 0, "nice": false },
+          "axis": { "labelExpr": "abs(datum.value)" }
+        },
+        "color": {
+          "field": "Trade_Type",
+          "type": "nominal",
+          "scale": {"domain": ["Import", "Export"], "range": ["#ff7f0e", "#1f77b4"]},
+          "legend": {"title": "Trade Type"}
+        },
+        "tooltip": [
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Trade_Type", "type": "nominal", "title": "Type"},
+          {"field": "Abs_Value", "type": "quantitative", "title": "Value (%)", "format": ",.1f"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.Signed_Value >= 0"}],
+      "mark": {"type": "text", "baseline": "middle", "fontSize": 12, "align": "left", "dx": 8},
+      "encoding": {
+        "y": {"field": "Year", "type": "ordinal", "sort": "ascending"},
+        "x": {"field": "Signed_Value", "type": "quantitative"},
+        "text": {"field": "Abs_Value", "type": "quantitative", "format": ",.1f"}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.Signed_Value < 0"}],
+      "mark": {"type": "text", "baseline": "middle", "fontSize": 12, "align": "right", "dx": -8},
+      "encoding": {
+        "y": {"field": "Year", "type": "ordinal", "sort": "ascending"},
+        "x": {"field": "Signed_Value", "type": "quantitative"},
+        "text": {"field": "Abs_Value", "type": "quantitative", "format": ",.1f"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"labelFontSize": 12, "titleFontSize": 12}
+  }
+}

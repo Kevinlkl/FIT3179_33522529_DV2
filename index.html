@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
-    <title>Homework Week 10</title>
+    <title>FIT3179_33522529_DV2</title>
     <link rel="stylesheet" href="styles.css">
 
     <script src="JsFiles/linechart_productivity.js" defer></script>
@@ -17,6 +17,8 @@
     <script src="JsFiles/dotmap_msia_seaport.js" defer></script>
     <script src="JsFiles/heatmap_gdp_gni.js" defer></script>
     <script src="JsFiles/chloropleth_employment.js" defer></script>
+    <script src="JsFiles/butterfly_import_export.js" defer></script>
+    <script src="JsFiles/dumbbell_gender_emp.js" defer></script>
 
 </head>
 
@@ -26,7 +28,7 @@
         <div class="top-banner">The Economy of Malaysia</div>
 
         <section class="viz-row">
-            <div class="viz-chart2">
+            <div class="viz-chart">
                 <div id="economic_line_chart"></div>
             </div>
             <aside class="viz-text">
@@ -71,7 +73,7 @@
             </aside>
         </section>
 
-        <div id="piechart_import_export" style="margin-top:16px"></div>
+        <div id="butterfly_import_export" style="margin-top:16px"></div>
 
         <section class="viz-row">
             <div class="viz-chart">
@@ -124,6 +126,29 @@
         <section class="viz-row">
             <div class="viz-chart">
                 <div id="chloropleth_emp"></div>
+            </div>
+            <aside class="viz-text">
+                <h2 style="margin-top:0">Discussing Productivity by Sector</h2>
+                <p>
+                    Productivity output per hour is normalized to a 2015 baseline (2015 = 100),
+                    allowing apples-to-apples comparison across sectors. Values above 100 indicate
+                    productivity gains relative to 2015, while values below 100 indicate declines.
+                </p>
+                <p>
+                    Key patterns to note:
+                </p>
+                <ul>
+                    <li>Manufacturing shows strong recovery post-2023 after a pandemic dip.</li>
+                    <li>Services sustain steady improvements with fewer swings year-to-year.</li>
+                    <li>Agriculture remains relatively flat compared to other sectors.</li>
+                </ul>
+                <p style="font-size: 0.9rem; color:#666">Hover over the lines to see exact values by year and sector.</p>
+            </aside>
+        </section>
+
+        <section class="viz-row">
+            <div class="viz-chart2">
+                <div id="dumbbell_gender"></div>
             </div>
             <aside class="viz-text">
                 <h2 style="margin-top:0">Discussing Productivity by Sector</h2>
