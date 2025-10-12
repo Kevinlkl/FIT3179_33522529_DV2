@@ -1,6 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Employment Ratio by State in Malaysia (2023)",
+  "title": {
+      "text": "Employment Ratio by State in Malaysia (2023)",
+      "fontSize": 24,
+      "fontWeight": "bold",
+      "font": "Serif",
+      "anchor": "start"
+  },
   "width": 910,
   "height": 400,
   "projection": {

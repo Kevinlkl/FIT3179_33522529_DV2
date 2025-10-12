@@ -1,8 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 500,
-    "title": "Evolution of Malaysia's Economic Indicators Over Time",
+    "width": 880,
+    "height": 400,
+    "title": {
+        "text": "Evolution of Malaysia's Economic Indicators Over Time",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "font": "Serif",
+        "anchor": "start"
+    },
     "data": {
         "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia%20economic%20dataset.csv"
     },

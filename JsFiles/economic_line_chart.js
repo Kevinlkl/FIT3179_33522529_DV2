@@ -1,4 +1,4 @@
-var vg_1 = "economic_line_chart.vg.json";
+var vg_1 = "Idioms/economic_line_chart.vg.json";
 
 vegaEmbed("#economic_line_chart", vg_1).then(function(result) {
     // Access the Vega view instance 

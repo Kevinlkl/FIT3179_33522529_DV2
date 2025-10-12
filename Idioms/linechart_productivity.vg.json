@@ -9,7 +9,7 @@
         "anchor": "start"
     },
     "width": 880,
-    "height": 300,
+    "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/productivity/productivity_annual_normalized.csv",
         "format": {"type": "csv"}
