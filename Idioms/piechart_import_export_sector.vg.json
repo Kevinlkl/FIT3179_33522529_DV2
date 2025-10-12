@@ -53,7 +53,7 @@
     },
     "spec": {
         "width": 260,
-        "height": 150,
+        "height": 300,
         "mark": {
             "type": "arc",
             "innerRadius": 0,

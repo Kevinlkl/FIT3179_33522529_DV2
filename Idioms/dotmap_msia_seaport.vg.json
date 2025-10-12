@@ -7,7 +7,7 @@
         "anchor": "start",
         "font": "Serif"
     },
-    "width": 950,
+    "width": 910,
     "height": 400,
     "projection": {
         "type": "mercator",

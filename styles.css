@@ -23,6 +23,9 @@ body {
 main {
   display: block;
   padding: 16px;
+  width: 1500px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* Two-column layout for chart + explanation */
@@ -33,20 +36,27 @@ main {
 }
 
 .viz-chart {
-  flex: 1 1 65%;
-  min-width: 0; /* prevent overflow in flex */
+  width: 900px;
   padding-right: 24px;
   padding-top: 16px;
   box-sizing: border-box;
+  width: 1368px;
 }
 
 .viz-text {
-  flex: 1 1 35%;
-  max-width: 450px;
+  width: 444px;
   line-height: 1.5;
   padding-top: 16px;
   color: #333;
   font-family: "Montserrat", sans-serif;
+}
+
+.viz-chart2 {
+  width: 900px;
+  padding-right: 10px;
+  padding-top: 16px;
+  box-sizing: border-box;
+  width: 1368px;
 }
 
 @media (max-width: 900px) {
