@@ -8,7 +8,7 @@
     "anchor": "start"
   },
   "width": 940,
-  "height": 400,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/trade/mys_trade_indicators_filtered.csv",
     "format": { "type": "csv" }

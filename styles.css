@@ -35,7 +35,7 @@ main {
 /* Two-column layout for chart + explanation */
 .viz-row {
   display: flex;
-  gap: 24px;
+  gap: 2px;
   align-items: flex-start;
   width: 100%;
 }
