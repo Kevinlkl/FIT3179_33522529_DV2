@@ -86,7 +86,7 @@
                     "legend": { 
                         "title": "Airport Types",
                         "labelExpr": "datum.label == 'small_airport' ? 'Small Airport' : datum.label == 'medium_airport' ? 'Medium Airport' : 'Large Airport'",
-                        "orient": "top-right",
+                        "orient": "bottom-right",
                         "direction": "horizontal"
                     }
                 },

@@ -113,7 +113,7 @@
             },
             "encoding": {
                 "x": {"value": 650},
-                "y": {"value": 30},
+                "y": {"value": 350},
                 "tooltip": {"value": null}
             }
         },
@@ -129,7 +129,7 @@
             },
             "encoding": {
                 "x": {"value": 650},
-                "y": {"value": 30},
+                "y": {"value": 350},
                 "text": {"field": "text", "type": "nominal"}
             }
         }

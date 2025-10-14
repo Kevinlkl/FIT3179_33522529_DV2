@@ -11,7 +11,7 @@
   "height": 400,
   "projection": {
     "type": "mercator",
-    "center": [109.5, 4],
+    "center": [109.5, 3],
     "scale": 2000
   },
   "layer": [
@@ -84,7 +84,7 @@
           "legend": {
             "title": "Ratio (%)",
             "values": [0, 50, 60, 70, 80],
-            "orient": "bottom-left"
+            "orient": "bottom-right"
           }
         },
         "stroke": {
