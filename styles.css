@@ -1,13 +1,15 @@
 /* Global styles */
 body {
   margin: 0;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Top banner */
 .top-banner {
   position: sticky;
   top: 0;
-  width: 1250;
+  width: 100%;
+  max-width: 1920px;
   background: #f5f5f5;
   border-bottom: 1px solid #ddd;
   z-index: 1000;
@@ -16,14 +18,17 @@ body {
   padding: 16px 10px;
   color: #222;
   letter-spacing: 0.5px;
-  font-size: 48px;
+  font-size: 42px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* Main content wrapper */
 main {
   display: block;
   padding: 16px;
-  width: 1450px;
+  width: 100%;
+  max-width: 1888px; /* 1920 - 32px padding */
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -33,18 +38,20 @@ main {
   display: flex;
   gap: 24px;
   align-items: flex-start;
+  width: 100%;
 }
 
 .viz-chart {
-  width: 900px;
+  flex: 1 1 70%;
+  max-width: 1320px; /* Fits comfortably in 1920px with padding */
   padding-right: 24px;
   padding-top: 16px;
   box-sizing: border-box;
-  width: 1368px;
 }
 
 .viz-text {
-  width: 444px;
+  flex: 1 1 30%;
+  max-width: 500px;
   line-height: 1.5;
   padding-top: 16px;
   color: #333;
@@ -52,20 +59,29 @@ main {
 }
 
 .viz-chart2 {
-  width: 900px;
+  flex: 1 1 100%;
+  max-width: 1856px; /* Full width charts */
   padding-right: 10px;
   padding-top: 16px;
   box-sizing: border-box;
-  width: 1368px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1920px) {
+  .top-banner { font-size: 36px; }
+  main { padding: 12px; }
+}
+
+@media (max-width: 1200px) {
   .viz-row { flex-direction: column; }
   .viz-text { max-width: none; }
+  .top-banner { font-size: 28px; }
 }
 
 /* Ensure embed respects container width */
 .viz-chart .vega-embed, 
-.viz-chart .vega-embed > div {
+.viz-chart .vega-embed > div,
+.viz-chart2 .vega-embed,
+.viz-chart2 .vega-embed > div {
   width: 100% !important;
+  max-width: 100% !important;
 }
