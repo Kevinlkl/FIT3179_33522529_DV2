@@ -1,14 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Malaysia Productivity by Sector (Normalized Output Per Hour, 2015=100)",
+        "text": "Malaysia Productivity by Sector (Normalized, 2015=100)",
         "subtitle": "Productivity output per hour normalized to 2015 baseline across sectors",
         "fontSize": 24,
         "fontWeight": "bold",
         "font": "Serif",
         "anchor": "start"
     },
-    "width": 1010,
+    "width": 690,
     "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/productivity/productivity_annual_normalized.csv",
@@ -61,7 +61,7 @@
             },
             "legend": {
                 "title": "Productivity Sectors",
-                "orient": "top-right",
+                "orient": "top-left",
                 "titleFontSize": 12,
                 "labelFontSize": 11,
                 "labelExpr": "datum.value == 'p1' ? 'Agriculture' : datum.value == 'p2' ? 'Mining and quarrying' : datum.value == 'p3' ? 'Manufacturing' : datum.value == 'p4' ? 'Construction' : 'Services'"

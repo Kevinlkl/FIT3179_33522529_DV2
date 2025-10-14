@@ -7,12 +7,12 @@
         "anchor": "start",
         "font": "Serif"
     },
-    "width": 1050,
+    "width": 750,
     "height": 400,
     "projection": {
         "type": "mercator",
         "center": [109.5, 4],
-        "scale": 2650
+        "scale": 2100
     },
     "layer": [
         {

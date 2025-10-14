@@ -7,8 +7,8 @@
     "font": "Serif",
     "anchor": "start"
   },
-  "width": 970,
-  "height": { "step": 26 },
+  "width": 670,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/lfs_state_sex.csv",
     "format": { "type": "csv", "parse": { "date": "date", "ep_ratio": "number" } }
@@ -17,13 +17,14 @@
     {
       "name": "year_select",
       "value": 2023,
-      "bind": { "input": "range", "min": 1982, "max": 2023, "step": 1, "name": "Year: " }
+      "bind": { "input": "range", "min": 1992, "max": 2023, "step": 1, "name": "Year: " }
     }
   ],
   "transform": [
     { "calculate": "year(datum.date)", "as": "Year" },
     { "calculate": "lower(datum.sex)", "as": "sex_l" },
     { "filter": "datum.sex_l == 'male' || datum.sex_l == 'female'" },
+    { "filter": "datum.Year >= 1992" },
     { "filter": "datum.Year == year_select" },
     { "pivot": "sex_l", "value": "ep_ratio", "groupby": ["state", "Year"] },
     { "calculate": "abs(datum.male - datum.female)", "as": "diff" },

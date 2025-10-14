@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1010,
+    "width": 690,
     "height": 400,
     "title": {
         "text": "Evolution of Malaysia's Economic Indicators Over Time",
