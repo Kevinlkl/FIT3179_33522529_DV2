@@ -51,7 +51,7 @@ main {
 .viz-text {
   flex: 1 1 30%;
   max-width: 500px;
-  line-height: 1.5;
+  line-height: 1.2;
   padding-top: 16px;
   color: #333;
   font-family: "Montserrat", sans-serif;

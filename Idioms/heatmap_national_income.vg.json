@@ -24,6 +24,9 @@
       "as": "Year"
     },
     {
+      "filter": "datum.Year >= 1992"
+    },
+    {
       "filter": "parseInt(datum.Year) % 4 == 0"
     },
     {
