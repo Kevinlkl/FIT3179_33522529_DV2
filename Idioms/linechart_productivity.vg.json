@@ -29,6 +29,13 @@
             "filter": "datum.normalized_productivity != null"
         }
     ],
+    "params": [
+        {
+        "name": "selector",
+        "select": {"type": "point", "fields": ["sector"]},
+        "bind": "legend"
+        }
+    ],
     "mark": {
         "type": "line",
         "point": true,
@@ -66,6 +73,10 @@
                 "labelFontSize": 11,
                 "labelExpr": "datum.value == 'p1' ? 'Agriculture' : datum.value == 'p2' ? 'Mining and quarrying' : datum.value == 'p3' ? 'Manufacturing' : datum.value == 'p4' ? 'Construction' : 'Services'"
             }
+        },
+        "opacity": {
+                "condition": {"param": "selector", "value": 0.8},
+                "value": 0.2
         },
         "tooltip": [
             {"field": "parsed_date", "type": "temporal", "title": "Year", "format": "%Y"},
