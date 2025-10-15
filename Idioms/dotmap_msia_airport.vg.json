@@ -9,10 +9,65 @@
     },
     "width": 750,
     "height": 400,
+    "params": [
+        {
+            "name": "zoom_level",
+            "value": 2100,
+            "bind": {
+                "input": "range",
+                "min": 1000,
+                "max": 21000,
+                "step": 100,
+                "name": "Zoom Level: "
+            }
+        },
+        {
+            "name": "center_to",
+            "value": [109.5, 4],
+            "bind": {
+                "input": "select",
+                "options": [
+                    [109.5, 4],
+                    [101.6869, 3.1390],
+                    [100.8327, 5.4141],
+                    [102.2501, 5.7239],
+                    [101.0901, 5.9804],
+                    [103.4265, 3.8077],
+                    [101.9758, 3.0297],
+                    [102.3386, 2.5896],
+                    [101.9424, 4.5975],
+                    [102.4378, 2.0535],
+                    [103.8256, 1.9854],
+                    [110.3294, 1.5533],
+                    [117.2753, 5.7788],
+                    [118.0079, 4.2105],
+                    [113.9914, 4.4148]
+                ],
+                "labels": [
+                    "Default (Center of Malaysia)",
+                    "Kuala Lumpur",
+                    "Penang",
+                    "Kelantan",
+                    "Kedah",
+                    "Pahang",
+                    "Selangor",
+                    "Negeri Sembilan",
+                    "Perak",
+                    "Melaka",
+                    "Johor",
+                    "Sarawak",
+                    "Sabah",
+                    "Labuan",
+                    "Sarawak (Central)"
+                ],
+                "name": "Map Center: "
+            }
+        }
+    ],
     "projection": {
         "type": "mercator",
-        "center": [109.5, 4],
-        "scale": 2100
+        "center": {"expr": "center_to"},
+        "scale": {"expr": "zoom_level"}
     },
     "layer": [
         {
