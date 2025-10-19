@@ -55,7 +55,7 @@
       "field": "Year",
       "type": "ordinal",
       "title": "Year",
-      "axis": {"labelAngle": -45}
+      "axis": {"labelAngle": 0}
     },
     "y": {
       "field": "IndicatorLabel",
