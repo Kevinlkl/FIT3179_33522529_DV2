@@ -2,11 +2,12 @@
 body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
+  background: #eceff1;
 }
 
 /* Top banner */
 .top-banner {
-  position: sticky;
+  position: static;
   top: 0;
   width: 100%;
   background: #f5f5f5;
@@ -27,6 +28,7 @@ main {
   width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
+  background: #ffffff;
 }
 
 /* Two-column layout for chart + explanation */
