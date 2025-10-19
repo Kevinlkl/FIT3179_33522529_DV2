@@ -108,6 +108,92 @@
           {"field": "ep_ratio", "type": "quantitative", "title": "Employment Ratio (%)", "format": ".1f"}
         ]
       }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/lfs_2023_both.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        { "filter": "datum.state == 'Selangor'" },
+        { "calculate": "101.5", "as": "stateLon" },   
+        { "calculate": "3.0", "as": "stateLat" },
+        { "calculate": "toNumber(datum.stateLon) + 2.5", "as": "labelLon" },
+        { "calculate": "toNumber(datum.stateLat) + 0.9", "as": "labelLat" },
+        { "calculate": "'Selangor, KL & Putrajaya are major;industrial, financial & government hubs'", "as": "labelRaw" },
+        { "calculate": "split(datum.labelRaw, ';')", "as": "labelLines" }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "#2E86AB", "strokeWidth": 1},
+          "encoding": {
+            "longitude": {"field": "stateLon"},
+            "latitude": {"field": "stateLat"},
+            "longitude2": {"field": "labelLon"},
+            "latitude2": {"field": "labelLat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 5,
+            "dy": -10,
+            "fontSize": 12,
+            "fill": "#111",
+            "stroke": "black",
+            "strokeWidth": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "labelLon"},
+            "latitude": {"field": "labelLat"},
+            "text": {"field": "labelLines"}
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/lfs_2023_both.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        { "filter": "datum.state == 'Kelantan'" },
+        { "calculate": "102.2", "as": "stateLon" },     
+        { "calculate": "5.8", "as": "stateLat" },
+        { "calculate": "toNumber(datum.stateLon) + 1.8", "as": "labelLon" },
+        { "calculate": "toNumber(datum.stateLat) + 0.5", "as": "labelLat" },
+        { "calculate": "'Kelantan is still heavily reliant;on agriculture which leads to a;lot of informal/self-employment'", "as": "labelRaw" },
+        { "calculate": "split(datum.labelRaw, ';')", "as": "labelLines" }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "#2E86AB", "strokeWidth": 1},
+          "encoding": {
+            "longitude": {"field": "stateLon"},
+            "latitude": {"field": "stateLat"},
+            "longitude2": {"field": "labelLon"},
+            "latitude2": {"field": "labelLat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 5,
+            "dy": -10,
+            "fontSize": 12,
+            "fill": "#111",
+            "stroke": "black",
+            "strokeWidth": 0.5
+          },
+          "encoding": {
+            "longitude": {"field": "labelLon"},
+            "latitude": {"field": "labelLat"},
+            "text": {"field": "labelLines"}
+          }
+        }
+      ]
     }
   ]
 }
