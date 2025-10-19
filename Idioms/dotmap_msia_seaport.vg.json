@@ -131,6 +131,86 @@
                 "y": {"value": 350},
                 "text": {"field": "text", "type": "nominal"}
             }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia_seaports.csv",
+            "format": { "type": "csv", "parse": { "Longitude": "number", "Latitude": "number" } }
+          },
+          "transform": [
+            { "filter": "datum['Port Name'] == 'Pelabuhan Kelang'" },
+            { "calculate": "datum.Longitude + 2.5", "as": "labelLon" },   
+            { "calculate": "datum.Latitude - 0.4", "as": "labelLat" },
+            { "calculate": "'Major container hub;High throughput and connectivity'", "as": "labelRaw" },
+            { "calculate": "split(datum.labelRaw, ';')", "as": "labelLines" }
+          ],
+          "layer": [
+            {
+              "mark": {"type": "rule", "color": "#2E86AB", "strokeWidth": 1},
+              "encoding": {
+                "longitude": {"field": "Longitude"},
+                "latitude": {"field": "Latitude"},
+                "longitude2": {"field": "labelLon"},
+                "latitude2": {"field": "labelLat"}
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 0, "dy": -4,
+                "fontSize": 12,
+                "fill": "#111",
+                "stroke": "black",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "longitude": {"field": "labelLon"},
+                "latitude": {"field": "labelLat"},
+                "text": {"field": "labelLines"}
+              }
+            }
+          ]
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia_seaports.csv",
+            "format": { "type": "csv", "parse": { "Longitude": "number", "Latitude": "number" } }
+          },
+          "transform": [
+            { "filter": "datum['Port Name'] == 'Pelabuhan Pasir Gudang'" },
+            { "calculate": "datum.Longitude + 2", "as": "labelLon" },
+            { "calculate": "datum.Latitude - 1.8", "as": "labelLat" },
+            { "calculate": "'Johor gateway to Singapore;Strong industrial cargo volumes'", "as": "labelRaw" },
+            { "calculate": "split(datum.labelRaw, ';')", "as": "labelLines" }
+          ],
+          "layer": [
+            {
+              "mark": {"type": "rule", "color": "#2E86AB", "strokeWidth": 1},
+              "encoding": {
+                "longitude": {"field": "Longitude"},
+                "latitude": {"field": "Latitude"},
+                "longitude2": {"field": "labelLon"},
+                "latitude2": {"field": "labelLat"}
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 0, "dy": -10,
+                "fontSize": 12,
+                "fill": "#111",
+                "stroke": "black",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "longitude": {"field": "labelLon"},
+                "latitude": {"field": "labelLat"},
+                "text": {"field": "labelLines"}
+              }
+            }
+          ]
         }
     ]
 }

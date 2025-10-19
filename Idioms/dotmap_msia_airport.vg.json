@@ -148,6 +148,178 @@
                     {"field": "region_name", "type": "nominal", "title": "Region Name"}
                 ]
             }
+        },
+        {
+        "data": {
+            "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/my-airports.csv",
+            "format": {"type": "csv", "parse": { "Longitude": "number", "Latitude": "number" } }
+            },
+            "transform": [
+                { "filter": "datum.type != 'closed' && datum.type != 'heliport'" },
+                {
+                "lookup": "name",
+                "from": {
+                    "data": {
+                    "values": [
+                        {"name": "Kuala Lumpur International Airport", "label": "Kuala Lumpur International Airport", "dx": -1.05, "dy": -1.70}
+                    ]
+                    },
+                    "key": "name",
+                    "fields": ["label","dx","dy"]
+                }
+                },
+                { "filter": "isValid(datum.label)" },
+                { "calculate": "toNumber(datum.longitude_deg) + datum.dx", "as": "labelLon" },
+                { "calculate": "toNumber(datum.latitude_deg) + datum.dy", "as": "labelLat" },
+                { "calculate": "'Kuala Lumpur; International Airport'", "as": "label" },
+                { "calculate": "split(datum.label, ';')", "as": "labelDone" }
+            ],
+            "layer": [
+                {
+                "mark": {"type": "rule", "color": "#2E86AB", "strokeWidth": 1},
+                "encoding": {
+                    "longitude": {"field": "longitude_deg"},
+                    "latitude": {"field": "latitude_deg"},
+                    "longitude2": {"field": "labelLon"},
+                    "latitude2": {"field": "labelLat"}
+                }
+                },
+                {
+                "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "dx": -9,
+                    "dy": 5,
+                    "fontSize": 11,
+                    "fontWeight": "bold",
+                    "fill": "#111",
+                    "stroke": "black",
+                    "strokeWidth": 0.1
+                },
+                "encoding": {
+                    "longitude": {"field": "labelLon"},
+                    "latitude": {"field": "labelLat"},
+                    "text": {"field": "labelDone"}
+                }
+                }
+            ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/my-airports.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "filter": "datum.name == 'Penang International Airport'" },
+        { "calculate": "'Penang International; Airport'", "as": "label" },
+        { "calculate": "split(datum.label, ';')", "as": "labelDone" },
+        { "calculate": "toNumber(datum.longitude_deg) + 0.50", "as": "labelLon" },
+        { "calculate": "toNumber(datum.latitude_deg)  + 1.20", "as": "labelLat" }
+      ],
+      "layer": [
+        {
+          "mark": { "type": "rule", "color": "#2E86AB", "strokeWidth": 1 },
+          "encoding": {
+            "longitude": { "field": "longitude_deg" },
+            "latitude":  { "field": "latitude_deg"  },
+            "longitude2": { "field": "labelLon" },
+            "latitude2":  { "field": "labelLat" }
+          }
+        },
+        {
+          "mark": { "type": "text", "align": "left", "dx": 0, "dy": -10, "fontSize": 11, "fontWeight": "bold", "fill": "#111", "stroke": "black", "strokeWidth": 0.1 },
+          "encoding": {
+            "longitude": { "field": "labelLon" },
+            "latitude":  { "field": "labelLat"  },
+            "text":      { "field": "labelDone" }
+          }
         }
+      ]
+    },
+    {
+      "data": { "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/my-airports.csv", "format": { "type": "csv" } },
+      "transform": [
+        { "filter": "datum.name == 'Kota Kinabalu International Airport'" },
+        { "calculate": "toNumber(datum.longitude_deg) - 1.70", "as": "labelLon" },
+        { "calculate": "toNumber(datum.latitude_deg)  + 0.15", "as": "labelLat" },
+        { "calculate": "'Kota Kinabalu; International Airport'", "as": "label" },
+        { "calculate": "split(datum.label, ';')", "as": "labelDone" }
+      ],
+      "layer": [
+        {
+          "mark": { "type": "rule", "color": "#2E86AB", "strokeWidth": 1 },
+          "encoding": {
+            "longitude": { "field": "longitude_deg" },
+            "latitude":  { "field": "latitude_deg"  },
+            "longitude2": { "field": "labelLon" },
+            "latitude2":  { "field": "labelLat" }
+          }
+        },
+        {
+          "mark": { "type": "text", "align": "left", "dx": -100, "dy": -20, "fontSize": 11, "fontWeight": "bold", "fill": "#111", "stroke": "black", "strokeWidth": 0.1 },
+          "encoding": {
+            "longitude": { "field": "labelLon" },
+            "latitude":  { "field": "labelLat"  },
+            "text":      { "field": "labelDone" }
+          }
+        }
+      ]
+    },
+    {
+      "data": { "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/my-airports.csv", "format": { "type": "csv" } },
+      "transform": [
+        { "filter": "datum.name == 'Kuching International Airport'" },
+        { "calculate": "toNumber(datum.longitude_deg) - 0.85", "as": "labelLon" },
+        { "calculate": "toNumber(datum.latitude_deg)  + 1.10", "as": "labelLat" },
+        { "calculate": "'Kuching; International Airport'", "as": "label" },
+        { "calculate": "split(datum.label, ';')", "as": "labelDone" }
+      ],
+      "layer": [
+        {
+          "mark": { "type": "rule", "color": "#2E86AB", "strokeWidth": 1 },
+          "encoding": {
+            "longitude": { "field": "longitude_deg" },
+            "latitude":  { "field": "latitude_deg"  },
+            "longitude2": { "field": "labelLon" },
+            "latitude2":  { "field": "labelLat" }
+          }
+        },
+        {
+          "mark": { "type": "text", "align": "left", "dx": -50, "dy": -20, "fontSize": 11, "fontWeight": "bold", "fill": "#111", "stroke": "black", "strokeWidth": 0.1 },
+          "encoding": {
+            "longitude": { "field": "labelLon" },
+            "latitude":  { "field": "labelLat"  },
+            "text":      { "field": "labelDone" }
+          }
+        }
+      ]
+    },
+    {
+      "data": { "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/my-airports.csv", "format": { "type": "csv" } },
+      "transform": [
+        { "filter": "datum.name == 'Langkawi International Airport'" },
+        { "calculate": "toNumber(datum.longitude_deg) + 0.80", "as": "labelLon" },
+        { "calculate": "toNumber(datum.latitude_deg)  + 1.52", "as": "labelLat" }
+      ],
+      "layer": [
+        {
+          "mark": { "type": "rule", "color": "#2E86AB", "strokeWidth": 1 },
+          "encoding": {
+            "longitude": { "field": "longitude_deg" },
+            "latitude":  { "field": "latitude_deg"  },
+            "longitude2": { "field": "labelLon" },
+            "latitude2":  { "field": "labelLat" }
+          }
+        },
+        {
+          "mark": { "type": "text", "align": "left", "dx": 0, "dy": 0, "fontSize": 11, "fontWeight": "bold", "fill": "#111", "stroke": "black", "strokeWidth": 0.1 },
+          "encoding": {
+            "longitude": { "field": "labelLon" },
+            "latitude":  { "field": "labelLat"  },
+            "text":      { "value": "Langkawi International Airport" }
+          }
+        }
+      ]
+    }
     ]
 }
