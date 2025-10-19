@@ -11,12 +11,12 @@ body {
   width: 100%;
   background: #f5f5f5;
   z-index: 1000;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'TT Ramillas', serif;
   font-weight: bold;
   text-align: center;
   padding: 16px 10px;
   color: #222;
-  font-size: 42px;
+  font-size: 64px;
   box-sizing: border-box;
 }
 
@@ -63,14 +63,12 @@ main {
 }
 
 @media (max-width: 1920px) {
-  .top-banner { font-size: 36px; }
   main { padding: 12px; }
 }
 
 @media (max-width: 1200px) {
   .viz-row { flex-direction: column; }
   .viz-text { max-width: none; }
-  .top-banner { font-size: 28px; }
 }
 
 /* Ensure embed respects container width */

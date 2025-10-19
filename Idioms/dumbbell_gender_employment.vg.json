@@ -62,7 +62,7 @@
       "mark": { "type": "point", "filled": true, "size": 90 },
       "encoding": {
         "y": { "field": "state", "type": "nominal", "title": null },
-        "x": { "field": "ep_value", "type": "quantitative", "title": "ep_ratio (%)" },
+        "x": { "field": "ep_value", "type": "quantitative", "title": "Employment Ratio (%)" },
         "color": {
           "field": "GenderLabel",
           "type": "nominal",
@@ -73,13 +73,13 @@
           "legend": {
             "orient": "bottom-left",
             "direction": "vertical",
-            "title": null
+            "title": "Gender"
           }
         },
         "tooltip": [
           { "field": "state", "title": "State" },
           { "field": "GenderLabel", "title": "Gender" },
-          { "field": "ep_value", "title": "ep_ratio (%)", "format": ".1f" },
+          { "field": "ep_value", "title": "Employment Ratio (%)", "format": ".1f" },
           { "field": "diff", "title": "Gap (pp)", "format": ".1f" }
         ]
       }
