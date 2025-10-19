@@ -60,7 +60,7 @@
     "y": {
       "field": "IndicatorLabel",
       "type": "nominal",
-      "title": "Category"
+      "title": "Metric"
     },
     "color": {
       "field": "Value",
