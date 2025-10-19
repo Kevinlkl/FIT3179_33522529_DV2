@@ -34,12 +34,15 @@
       "as": ["Indicator", "Value"]
     },
     {
+      "calculate": "upper(datum.Indicator)", "as": "IndicatorLabel"
+    },
+    {
       "aggregate": [{
         "op": "mean",
         "field": "Value",
         "as": "Value"
       }],
-      "groupby": ["Year", "Indicator"]
+      "groupby": ["Year", "IndicatorLabel"]
     }
   ],
   "mark": {
@@ -55,7 +58,7 @@
       "axis": {"labelAngle": -45}
     },
     "y": {
-      "field": "Indicator",
+      "field": "IndicatorLabel",
       "type": "nominal",
       "title": "Category"
     },
@@ -70,7 +73,7 @@
       }
     },
     "tooltip": [
-      {"field": "Indicator", "type": "nominal", "title": "Metric"},
+      {"field": "IndicatorLabel", "type": "nominal", "title": "Metric"},
       {"field": "Year", "type": "ordinal", "title": "Year"},
       {
         "field": "Value",

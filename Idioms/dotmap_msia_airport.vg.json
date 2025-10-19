@@ -2,8 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
         "text": "Distribution of Airports in Malaysia",
-        "subtitle": "Locations and Information of Airports across Malaysia",
-        "fontSize": 20,
+        "fontSize": 24,
         "anchor": "start",
         "font": "Serif"
     },
@@ -27,7 +26,6 @@
             "bind": {
                 "input": "select",
                 "options": [
-                    [109.5, 4],
                     [101.6869, 3.1390],
                     [100.8327, 5.4141],
                     [102.2501, 5.7239],
@@ -44,7 +42,6 @@
                     [113.9914, 4.4148]
                 ],
                 "labels": [
-                    "Default (Center of Malaysia)",
                     "Kuala Lumpur",
                     "Penang",
                     "Kelantan",

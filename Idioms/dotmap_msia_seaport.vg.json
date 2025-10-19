@@ -2,8 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
         "text": "Distribution of Seaports in Malaysia",
-        "subtitle": "Locations and Information of Seaports across Malaysia",
-        "fontSize": 20,
+        "fontSize": 24,
         "anchor": "start",
         "font": "Serif"
     },

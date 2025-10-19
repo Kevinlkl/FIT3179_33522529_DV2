@@ -54,6 +54,12 @@ main {
   font-family: "Montserrat", sans-serif;
 }
 
+.viz-text h2 {
+  border-bottom: 3px solid #4ea3d8;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
 .viz-chart2 {
   flex: 1 1 100%;
   max-width: 1856px; /* Full width charts */

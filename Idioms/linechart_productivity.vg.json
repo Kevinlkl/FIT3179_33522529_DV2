@@ -2,7 +2,6 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
         "text": "Malaysia Productivity by Sector (Normalized, 2015=100)",
-        "subtitle": "Productivity output per hour normalized to 2015 baseline across sectors",
         "fontSize": 24,
         "fontWeight": "bold",
         "font": "Serif",
