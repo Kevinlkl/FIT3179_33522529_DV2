@@ -16,32 +16,17 @@
   },
   "layer": [
     {
-      "data": {
-        "sphere": true
-      },
-      "mark": {
-        "type": "geoshape",
-        "fill": "#e6f3ff"
-      }
+      "data": {"sphere": true},
+      "mark": {"type": "geoshape", "fill": "#e6f3ff"}
     },
     {
-      "data": {
-        "graticule": {"step": [1, 1]}
-      },
-      "mark": {
-        "type": "geoshape",
-        "fill": null,
-        "stroke": "lightgray",
-        "strokeWidth": 0.5
-      }
+      "data": {"graticule": {"step": [1, 1]}},
+      "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray", "strokeWidth": 0.5}
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/Kevinlkl/FIT3179_33522529_DV2/main/Datasets/malaysia_map.json",
-        "format": {
-          "type": "topojson",
-          "feature": "my"
-        }
+        "format": {"type": "topojson", "feature": "my"}
       },
       "transform": [
         {
@@ -57,19 +42,11 @@
           "default": null
         }
       ],
-      "mark": {
-        "type": "geoshape",
-        "stroke": "white",
-        "strokeWidth": 1
-      },
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
       "params": [
         {
           "name": "hover",
-          "select": {
-            "type": "point",
-            "on": "mouseover",
-            "clear": "mouseout"
-          }
+          "select": {"type": "point", "on": "mouseover", "clear": "mouseout"}
         }
       ],
       "encoding": {
@@ -81,26 +58,14 @@
             "range": ["#e5f5e0", "#a1d99b", "#74c476", "#41ab5d", "#238b45"],
             "domain": [50, 80]
           },
-          "legend": {
-            "title": "Ratio (%)",
-            "values": [0, 50, 60, 70, 80],
-            "orient": "bottom-right"
-          }
+          "legend": {"title": "Ratio (%)", "values": [0, 50, 60, 70, 80], "orient": "bottom-right"}
         },
         "stroke": {
-          "condition": {
-            "param": "hover",
-            "empty": false,
-            "value": "#333333"
-          },
+          "condition": {"param": "hover", "empty": false, "value": "#333333"},
           "value": "white"
         },
         "strokeWidth": {
-          "condition": {
-            "param": "hover",
-            "empty": false,
-            "value": 3
-          },
+          "condition": {"param": "hover", "empty": false, "value": 3},
           "value": 1
         },
         "tooltip": [
@@ -118,8 +83,8 @@
         { "filter": "datum.state == 'Selangor'" },
         { "calculate": "101.5", "as": "stateLon" },   
         { "calculate": "3.0", "as": "stateLat" },
-        { "calculate": "toNumber(datum.stateLon) + 2.5", "as": "labelLon" },
-        { "calculate": "toNumber(datum.stateLat) + 0.9", "as": "labelLat" },
+        { "calculate": "toNumber(datum.stateLon) - 1.5", "as": "labelLon" },
+        { "calculate": "toNumber(datum.stateLat) - 2.5", "as": "labelLat" },
         { "calculate": "'Selangor, KL & Putrajaya are major;industrial, financial & government hubs'", "as": "labelRaw" },
         { "calculate": "split(datum.labelRaw, ';')", "as": "labelLines" }
       ],
@@ -137,12 +102,27 @@
           "mark": {
             "type": "text",
             "align": "left",
+            "dx": 0,
+            "dy": -3,
+            "fontSize": 24,
+            "stroke": "whitesmoke",
+            "strokeWidth": 10
+          },
+          "encoding": {
+            "longitude": {"field": "labelLon"},
+            "latitude": {"field": "labelLat"},
+            "text": {"value": "|||||||||||||||||||||||||||||||||||||||"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
             "dx": 5,
             "dy": -10,
             "fontSize": 12,
-            "fill": "#111",
-            "stroke": "black",
-            "strokeWidth": 0.5
+            "fill": "#111"
           },
           "encoding": {
             "longitude": {"field": "labelLon"},
@@ -163,7 +143,7 @@
         { "calculate": "5.8", "as": "stateLat" },
         { "calculate": "toNumber(datum.stateLon) + 1.8", "as": "labelLon" },
         { "calculate": "toNumber(datum.stateLat) + 0.5", "as": "labelLat" },
-        { "calculate": "'Kelantan is still heavily reliant;on agriculture which leads to a;lot of informal/self-employment'", "as": "labelRaw" },
+        { "calculate": "'Kelantan is still heavily reliant on agriculture; which leads to a lot of informal/self-employment'", "as": "labelRaw" },
         { "calculate": "split(datum.labelRaw, ';')", "as": "labelLines" }
       ],
       "layer": [
@@ -180,12 +160,27 @@
           "mark": {
             "type": "text",
             "align": "left",
+            "dx": 0,
+            "dy": -3,
+            "fontSize": 26,
+            "stroke": "whitesmoke",
+            "strokeWidth": 10
+          },
+          "encoding": {
+            "longitude": {"field": "labelLon"},
+            "latitude": {"field": "labelLat"},
+            "text": {"value": "|||||||||||||||||||||||||||||||||||||||"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
             "dx": 5,
             "dy": -10,
             "fontSize": 12,
-            "fill": "#111",
-            "stroke": "black",
-            "strokeWidth": 0.5
+            "fill": "#111"
           },
           "encoding": {
             "longitude": {"field": "labelLon"},
