@@ -26,6 +26,10 @@
         },
         {
             "filter": "datum.normalized_productivity != null"
+        },
+        {
+            "calculate": "datum.sector == 'p1' ? 'Agriculture' : datum.sector == 'p2' ? 'Mining and quarrying' : datum.sector == 'p3' ? 'Manufacturing' : datum.sector == 'p4' ? 'Construction' : 'Services'",
+            "as": "sector_label"
         }
     ],
     "params": [
@@ -79,7 +83,7 @@
         },
         "tooltip": [
             {"field": "parsed_date", "type": "temporal", "title": "Year", "format": "%Y"},
-            {"field": "sector", "type": "nominal", "title": "Sector"},
+            {"field": "sector_label", "type": "nominal", "title": "Sector"},
             {"field": "normalized_productivity", "type": "quantitative", "title": "Index (2015=100)", "format": ".1f"},
             {"field": "output_hour", "type": "quantitative", "title": "Original Value", "format": ".1f"}
         ]

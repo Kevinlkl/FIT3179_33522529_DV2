@@ -144,7 +144,6 @@
                 },
                 "tooltip": [
                     {"field": "name", "type": "nominal", "title": "Airport Name"},
-                    {"field": "type", "type": "nominal", "title": "Airport Type"},
                     {"field": "region_name", "type": "nominal", "title": "Region Name"}
                 ]
             }
